@@ -1,0 +1,29 @@
+body a {
+  color: $black;
+  &:visited, &:active {
+    color: $black; }
+  &:hover {
+    background: $black;
+    color: white; } }
+
+.home a:hover {
+  background: white;
+  color: $black; }
+
+.back, .black, .horizontal {
+  background: $black; }
+
+.vertical h1, .horizontal h1, .vertical h1 a, .horizontal h1 a {
+  color: white; }
+
+.bottom a {
+  color: white;
+  &:visited, &:active {
+    color: white; }
+  &:hover {
+    background: white;
+    color: $black; } }
+
+.projects a:hover {
+  background: white;
+  color: $black; }

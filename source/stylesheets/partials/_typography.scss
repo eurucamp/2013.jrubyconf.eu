@@ -1,0 +1,82 @@
+a {
+  padding: 0.1em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  &:hover {
+    text-decoration: underline; } }
+
+.bottom a {
+  padding: 0.3em;
+  letter-spacing: 0.05em;
+  &:hover {
+    text-decoration: underline; } }
+
+.right {
+  text-align: right; }
+
+.vertical {
+  h1, a {
+    padding: 0em;
+    letter-spacing: 0.05em; } }
+
+.horizontal {
+  h1, a {
+    padding: 0em;
+    letter-spacing: 0.05em; } }
+
+.vertical a:hover {
+  text-decoration: none; }
+
+.horizontal {
+  a:hover {
+    text-decoration: none; }
+  margin-top: 1em;
+  h1 {
+    font-size: 1.5em;
+    padding: 0.1em 0 0.1em 0.5em; } }
+
+.text {
+  p, h1, h2, h3, h4, h5, h6 {
+    font-size: 0.95em;
+    text-decoration: none; }
+  a {
+    &:link, &:hover, &:active, &:visited {
+      font-size: 0.95em;
+      text-decoration: none; } }
+  ul, li {
+    font-size: 1em; }
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: normal; }
+  h4 {
+    font-weight: normal;
+    font-style: italic; }
+  ul, ol {
+    padding-left: 0.5em; }
+  ul li, ol li {
+    margin-left: 0.5em;
+    list-style-type: square; }
+  p {
+    padding-left: 1em; }
+  sup, sub {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative; }
+  sup {
+    bottom: 1ex; }
+  sub {
+    top: 0.5ex; } }
+
+.info p {
+  margin: 0;
+  padding: 0; }
+
+.sign {
+  text-align: right;
+}

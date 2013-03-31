@@ -1,0 +1,106 @@
+-# coding: utf-8
+!!! 5
+%html
+  %head
+    %meta{:charset=>"utf-8"}
+    %meta{:content=>"IE=edge,chrome=1", :'http-equiv'=>"X-UA-Compatible"}
+    %link{:rel=>"icon", :type=>"image/png", :href=>"favicon.png"}
+    <script type="text/javascript" src="http://use.typekit.com/cla2fqo.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    = stylesheet_link_tag 'normalize', 'style'
+    = yield_content :title
+    <script src="/js/custom.modernizr.js"></script>
+
+  %body
+    .row
+      .small-13.columns.show-for-small
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    .contain-to-grid.sticky
+      %nav.top-bar.show-for-small
+        %ul.title-area
+          / Title Area
+          %li.name
+            %h1
+              %a{:href =>"/"}
+                JRubyConf EU
+          / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"}
+              %span
+        %section.top-bar-section
+          / Left Nav Section
+          %ul.left
+            %li
+              = link_to 'Section', '#'
+            %li.divider
+            %li
+              = link_to 'Section', '#'
+            %li.divider
+            %li
+              = link_to 'Section', '#'
+            %li.divider
+            %ul.button-group
+              %li
+                %a.small.button{:href => "#"} Button 1
+              %li
+                %a.small.button{:href => "#"} Button 2
+
+    .row
+      .small-13.large-1.columns.hide-for-small
+        %p &nbsp;
+      = yield.force_encoding('UTF-8')
+    .row.hide-for-small
+      .small-13.large-13.columns
+        %p &nbsp;
+        %p &nbsp;
+    .home.hide-for-small
+      %h1
+        %a{:href =>"/"}
+          JRubyConf EU
+    .row.bottom.hide-for-small
+      .large-4.large-offset-1.columns.black
+        %dl.sub-nav
+          %dd= link_to 'Link'  '#'
+          %dd= link_to 'Link', '#'
+          %dd= link_to 'Link', '#'
+      .large-4.columns.black
+        %dl.sub-nav
+          %dd
+            %a{:href =>"/"}
+              english
+      .large-4.columns.black
+        %dl.sub-nav
+          %dd
+            %a{:href=>"http://twitter.com/JRubyConfEU"}
+              @JRubyConfEU
+          %dd
+            %a{:href=>"mailto:info@eurucamp.org"}
+              email
+
+    :javascript
+      document.write('<script src=' +
+      ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+      '.js><\/script>')
+
+    = javascript_include_tag 'foundation/foundation'
+    -#javascript_include_tag 'foundation/foundation.alerts'
+    -#javascript_include_tag 'foundation/foundation.clearing'
+    -#javascript_include_tag 'foundation/foundation.cookie'
+    -#javascript_include_tag 'foundation/foundation.dropdown'
+    -#javascript_include_tag 'foundation/foundation.forms'
+    -#javascript_include_tag 'foundation/foundation.joyride'
+    -#javascript_include_tag 'foundation/foundation.magellan'
+    -#javascript_include_tag 'foundation/foundation.orbit'
+    -#javascript_include_tag 'foundation/foundation.placeholder'
+    -#javascript_include_tag 'foundation/foundation.reveal'
+    -#javascript_include_tag 'foundation/foundation.section'
+    -#javascript_include_tag 'foundation/foundation.tooltips'
+    = javascript_include_tag 'foundation/foundation.topbar'
+
+    <script>$(document).foundation();</script>
