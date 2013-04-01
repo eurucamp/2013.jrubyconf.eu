@@ -1,24 +1,14 @@
-.back {
-  height: 20em;
-  width: 3.3em;
-  margin-top: -1em; }
-
-.vertical {
-  @include transform-origin(9.5em, 9.5em);
-  @include rotate(-90deg);
-  width: 100em; }
-
-.home{
-  padding-left: 1em;
-}
-
 .bottom {
   z-index: 99;
   position: fixed;
   text-align: right;
-  bottom: 0px; }
+  bottom: 0px; 
+}
 
-@media only screen and (max-width: 768px) {
-  .horizontal{
-    background: red;}
+.home{
+  z-index: 100;
+  position: fixed;
+  bottom: 0px;
+  padding-left: 1em;
+  padding-bottom: 1em;
 }
