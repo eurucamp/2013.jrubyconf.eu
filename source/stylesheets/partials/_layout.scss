@@ -8,13 +8,9 @@
   @include rotate(-90deg);
   width: 100em; }
 
-.home {
-  @include transform-origin(1em, 1em);
-  @include rotate(-90deg);
-  z-index: 100;
-  position: fixed;
-  bottom: 0px;
-  padding-top: 1em; }
+.home{
+  padding-left: 1em;
+}
 
 .bottom {
   z-index: 99;
