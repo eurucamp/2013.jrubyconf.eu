@@ -1,8 +1,15 @@
 // Required global settings and mixins for Foundation
 @import "foundation/foundation-global";
 
-$black: #0A0A0A;
-$white: #FAFAFA;
+//$black: #0A0A0A;
+$black: #111111;
+$gray1: #222222;
+$gray2: #333333;
+$gray3: #444444;
+$gray4: #555555;
+$gray5: #DDDDDD;
+$white: #EFEFEF;
+$red:   #D10023;
 
 // Setting for Foundation Icons
 $fontFileName: "../fonts/general_foundicons";

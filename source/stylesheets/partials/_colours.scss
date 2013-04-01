@@ -1,12 +1,19 @@
 body{
   background-image: url('/images/line.png');
-  background-color: #ddd;
+  background-color: $gray5;
 }
 
 .content{
   text-align: center;
   i{
-    color: red;
+    color: $red;
+  }
+  h1{
+    color: $white;
+  }
+  p{
+    //background-color: $white;
+
   }
 }
 
