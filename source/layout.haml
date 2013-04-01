@@ -12,6 +12,14 @@
     <script src="/js/custom.modernizr.js"></script>
 
   %body
+
+
+    //home mobile
+    .home_mobile.show-for-small
+      .row
+        .small-13.columns
+          %img{:src=>'/images/jrubyconf_logo.png'}
+
     //content
     .content
       .row
@@ -23,17 +31,14 @@
           %p &nbsp;
           %p &nbsp;
 
-    //home
+    //home desk
     .home.hide-for-small
       %a{:href =>"/"}
         %img{:src=>'/images/jrubyconf_logo_ver.png'}
-      //%h1
-      //  %a{:href =>"/"}
-      //    JRubyConf EU
 
     //navigation
-    .row.bottom.hide-for-small
-      .large-12.large-offset-1.columns.black
+    .row.bottom
+      .small-13.large-12.large-offset-1.columns.black
         %dl.sub-nav
           %dd
             %img{:src=>'/images/twitter_icon.png'}

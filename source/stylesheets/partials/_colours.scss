@@ -28,3 +28,11 @@ body{
   background-image: url('/images/vert.png');
 }
 
+.home_mobile{
+  background-color: rgba(0,0,0,0.7);
+}
+
+@media only screen and (max-width: 768px) {
+  .black{
+    background-color: $white}
+}
