@@ -13,14 +13,15 @@
 
   %body
     //content
-    .row
-      .small-13.large-1.columns.hide-for-small
-        %p &nbsp;
-      = yield.force_encoding('UTF-8')
-    .row.hide-for-small
-      .small-13.large-13.columns
-        %p &nbsp;
-        %p &nbsp;
+    .content
+      .row
+        .small-13.large-1.columns.hide-for-small
+          %p &nbsp;
+        = yield.force_encoding('UTF-8')
+      .row.hide-for-small
+        .small-13.large-13.columns
+          %p &nbsp;
+          %p &nbsp;
 
     //home
     .home.hide-for-small

@@ -1,6 +1,16 @@
 body{
-  //background-image: url('/images/diag.png');
+  background-image: url('/images/line.png');
+  background-color: #ddd;
 }
+
+.content{
+  text-align: center;
+  i{
+    color: red;
+  }
+}
+
+
 
 a {
   color: $black;
