@@ -1,4 +1,8 @@
-body a {
+body{
+  //background-image: url('/images/diag.png');
+}
+
+a {
   color: $black;
   &:visited, &:active {
     color: $black; }
