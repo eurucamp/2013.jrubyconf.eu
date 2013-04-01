@@ -33,24 +33,19 @@
 
     //navigation
     .row.bottom.hide-for-small
-      .large-4.large-offset-1.columns.black
-        %dl.sub-nav
-          %dd &nbsp;
-          %dd &nbsp;
-          %dd &nbsp;
-      .large-4.columns.black
+      .large-12.large-offset-1.columns.black
         %dl.sub-nav
           %dd
-            %a{:href =>"/"}
-              &nbsp;
-      .large-4.columns.black
-        %dl.sub-nav
+            %img{:src=>'/images/twitter_icon.png'}
           %dd
-            %a{:href=>"http://twitter.com/JRubyConfEU"}
-              @JRubyConfEU
+            %img{:src=>'/images/lanyrd_icon.png'}
           %dd
-            %a{:href=>"mailto:info@eurucamp.org"}
-              email
+            %img{:src=>'/images/facebook_icon.png'}
+          %dd
+            %img{:src=>'/images/jruby_logo.png'}
+
+
+
 
     :javascript
       document.write('<script src=' +

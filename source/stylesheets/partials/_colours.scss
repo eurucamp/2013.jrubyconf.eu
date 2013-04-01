@@ -17,25 +17,9 @@ body{
   }
 }
 
-
-
-a {
-  color: $black;
-  &:visited, &:active {
-    color: $black; }
-  &:hover {
-    background: $black;
-    color: white; } }
-
-.home a:hover {
-  background: white;
-  color: $black; }
-
-.back, .black, .horizontal {
-  background: $black; }
-
-.vertical h1, .horizontal h1, .vertical h1 a, .horizontal h1 a {
-  color: white; }
+.black{
+  background-image: url('/images/vert.png');
+}
 
 .bottom a {
   color: white;
