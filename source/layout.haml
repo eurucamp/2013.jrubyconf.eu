@@ -9,7 +9,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     = stylesheet_link_tag 'normalize', 'style', 'general_foundicons'
     = yield_content :title
-    <script src="/js/custom.modernizr.js"></script>
+    = javascript_include_tag 'vendor/custom.modernizr'
 
   %body
 
