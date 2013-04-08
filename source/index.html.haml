@@ -4,20 +4,6 @@
 
 .small-13.large-4.columns
   %h1
-    tickets
-  %i.foundicon-cart
-  %p
-    Early-bird tickets for JRubyConf EU and eurucamp will be available from
-    Monday 8 April, 6pm CEST. Check back here on Monday or
-    = link_to 'follow us on Twitter', 'https://twitter.com/jrubyconfeu'
-    for the registration link.
-  -#%p
-    Early-bird tickets for JRubyConf EU and eurucamp are now available from
-    = succeed '.' do
-      = link_to 'tickets.eurucamp.org', 'http://tickets.eurucamp.org/'
-
-.small-13.large-4.columns
-  %h1
     dates
   %i.foundicon-calendar
   %h2 14 - 15 August 2013
@@ -38,7 +24,23 @@
     JRubyConf returns to Germany’s vibrant capital, Berlin. Our striking
     downtown location will be announced shortly.
 
+.logo.small-13.large-4.columns.hide-for-small
+  %img{:src=>'/images/jrubyconf_logo_alone.png'}
+
 .small-13.large-4.columns
+  %h1
+    tickets
+  %i.foundicon-cart
+  %p
+    Early-bird tickets for JRubyConf EU and eurucamp will be available from
+    Monday 8 April, 6pm CEST. Check back here on Monday or
+    = link_to 'follow us on Twitter', 'https://twitter.com/jrubyconfeu'
+    for the registration link.
+  -#%p
+    Early-bird tickets for JRubyConf EU and eurucamp are now available from
+    = succeed '.' do
+      = link_to 'tickets.eurucamp.org', 'http://tickets.eurucamp.org/'
+
   %h1
     speakers
   %i.foundicon-mic
