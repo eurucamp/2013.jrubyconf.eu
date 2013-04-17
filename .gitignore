@@ -4,14 +4,6 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
-.DS_Store
-*.swp
-*.swo
-*.tmproj
-/.idea
-*.iml
-*.un~
-
 # Ignore bundler config
 /.bundle
 
