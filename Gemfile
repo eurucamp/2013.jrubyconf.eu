@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 gem 'rake',               '~> 10.0.3'
 
 gem 'middleman'
@@ -22,5 +24,4 @@ group :production do
   gem 'rack-rewrite'
 end
 
-# FIXME: Need to set this up with Bundler groups correctly
 gem 'heroku_san',         '3.0.2'
