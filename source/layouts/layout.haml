@@ -12,12 +12,16 @@
     %link(href="apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon")
     %link(href="apple-touch-icon-72x72-precomposed.png" sizes="72x72" rel="apple-touch-icon")
     %link(href="apple-touch-icon-114x114-precomposed.png" sizes="114x114" rel="apple-touch-icon")
- 
+
     = javascript_include_tag "vendor/modernizr-2.6.1.min"
     = stylesheet_link_tag "site"
-    
+
+    = javascript_include_tag "//use.typekit.net/vor5lqb.js"
+    :javascript
+      try{Typekit.load();}catch(e){}
+
     = partial 'partials/analytics'
-    
+
   %body
     #container
       = partial 'partials/header'
