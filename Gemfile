@@ -4,12 +4,10 @@ ruby '1.9.3'
 
 gem 'rake',               '~> 10.0.3'
 
-gem 'middleman'
+gem 'middleman',          '~> 3.0.13'
 gem 'middleman-livereload'
 gem 'builder'
 gem 'sitemap_generator'
-gem 'coffee-script'
-gem 'coffee-filter'
 gem 'nokogiri'
 gem 'redcarpet'
 gem 'bourbon'
