@@ -1,5 +1,27 @@
 module SiteHelpers
 
+  # Render section
+  #
+  # Wraps content in <section/> tag and adds anchor to top.
+  # Data is scoped to section.
+  # Usage:
+  #   = render_section :foo, :class => 'bar'
+  #   = render_section :bat do |data|
+  #     %h1= data.title
+  def render_section(name, attrs = {}, &block)
+    capture_haml do
+      haml_tag :section, attrs.merge(:id => name) do
+        section_data = data.send(name.to_sym)
+        haml_tag :a, 'Back to top', { :class => 'top', :href => '#top' }
+        if block_given?
+          yield(section_data)
+        else
+          haml_concat partial("partials/#{name}", :locals => { :data => section_data })
+        end
+      end
+    end
+  end
+
   def ie_html(attrs={}, &block)
     attrs.keys.each do |key|
       attrs[(key.to_sym rescue key) || key] = attrs.delete(key)
