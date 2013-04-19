@@ -1,2 +1,5 @@
-- Tickets
-- Speakers
+# list the ids for the sections you want
+# to be included in the output:
+
+- tickets
+- speakers
