@@ -1,0 +1,20 @@
+=custom-sans($weight: normal)
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif
+  @if $weight == light
+    font-weight: 300
+  @else if $weight == bold
+    font-weight: 700
+  @else if $weight == black
+    font-weight: 900
+  @else
+    font-weight: 400
+
+=custom-serif($weight: normal, $style: normal)
+  font-family: "chaparral-pro", Georgia, serif
+  @if $weight == bold
+    font-weight: 700
+  @else if $weight == light
+    font-weight: 300
+  @else
+    font-weight: 400
+  font-style: $style
