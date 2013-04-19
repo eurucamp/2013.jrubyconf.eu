@@ -1,1 +1,9 @@
-Header
+%header#header
+  .wrapper
+    %h1
+      = image_tag "header/logo@2x.png", :alt => "JRubyConf.eu"
+
+    %a.navigation-toggle(href="#footer" title="Jump to the navigation")
+      Jump to navigation
+
+  = partial "partials/navigation"

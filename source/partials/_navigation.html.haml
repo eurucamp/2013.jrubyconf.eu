@@ -1,0 +1,7 @@
+%nav.navigation
+  %ul
+    - data.sections.each do |section|
+      %li
+        - title = data.to_h[section][:nav_title] || data.to_h[section][:title]
+        %a(href="##{section}" title="Jump to #{title}")
+          = title

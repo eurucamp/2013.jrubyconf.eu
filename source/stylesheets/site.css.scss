@@ -4,5 +4,7 @@
 
 @import "fonts";
 @import "base";
+@import "utils";
 
-// Sections
+@import "partials/header";
+@import "partials/navigation";
