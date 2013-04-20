@@ -1,4 +1,4 @@
-#header nav.navigation
+nav.navigation
   clear: both
   +clearfix
   background: $black
@@ -55,12 +55,13 @@
           color: $red
 
 
-
 // navigation in footer, only used on small sizes and
 // if JS is not available
-
 #footer .navigation
   display: none
 
-  html.no-js
+  html.no-js &
     display: block
+
+    +respond-to(tablet-lite)
+      display: none
