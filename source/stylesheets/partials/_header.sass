@@ -34,13 +34,57 @@
       background-image: url(/images/header/navigation_toggle@2x.png)
       background-size: 40px 30px
 
+  // the big red lift underneath the navigation,
+  // only visible on bigger screens
+
+  .lift
+    display: none
 
   +respond-to(tablet-lite)
-    .wrapper
+    .wrapper,
+    h1,
+    a.navigation-toggle
       display: none
 
-    h1
-      display: none
+    $lift_bg_image: '/images/header/lift_bg.jpg'
 
-    a.navigation_toggle
-      display: none
+    .lift
+      display: block
+      text-align: center
+      color: $white
+
+      padding: 2em 0
+      +background-size-cover('/images/header/lift_bg.jpg')
+      +animate(fade-in, 0.5s, 0.5s)
+
+      img
+        width: 220px
+        +animate(flip-in-y, 2s, 1s)
+
+      h2
+        font-size: 3.5em
+        line-height: 0.85em
+        text-transform: lowercase
+        font-variant: small-caps
+        +custom-serif(regular)
+        letter-spacing: 0.05em
+        margin: -35px 0 0.25em
+
+        span
+          +animated
+          display: block
+          +animate(fade-in-left, 1s, 1s)
+
+        strong
+          display: block
+          font-size: 1.0125em
+          text-shadow: 0 0 2em $darker-red
+          +custom-sans(black)
+          +animate(fade-in-right, 1s, 1s)
+
+      p
+        +custom-sans(thin)
+        font-size: 1.125em
+        letter-spacing: 0.06em
+        margin: 2em 0 1em
+        +animate(fade-in, 3s)
