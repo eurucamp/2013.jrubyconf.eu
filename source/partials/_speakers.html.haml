@@ -7,11 +7,5 @@
         %strong= speaker.name
         = speaker.company
 
-%p.cfp-info
-  Got something to say our attendees simply must not miss?
-  %br
-  Our
-  %a(href="" title="Head over to the CFP")
-    call for papers
-  is open until May 5th.
-
+- if data.cfp_info
+  %p.cfp-info= data.cfp_info
