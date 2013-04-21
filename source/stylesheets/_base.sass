@@ -5,3 +5,56 @@ body
 a
   color: $lighter-red
   text-decoration: none
+
+p
+  font-size: 1.125em
+  letter-spacing: 0.055em
+  line-height: 1.5em
+
+button,
+.button
+  display: inline-block
+  line-height: 39px
+  text-align: center
+  width: 100%
+  height: 40px
+  background: $lighter-red
+  color: $white
+  font-size: 1.125em
+  text-transform: lowercase
+  font-variant: small-caps
+  letter-spacing: 0.08em
+  +custom-sans(bold)
+  +transition(all 0.25s)
+  border-radius: 3px
+
+  &:hover
+    background: $red
+
+  &:active
+
+  +respond-to(mid-range)
+    width: 200px
+
+section
+  .wrapper
+    margin: 3em 20px
+
+  a.top
+    font-size: 0.75em
+    color: $light-gray
+    +transition(all 0.15s)
+
+    &:hover
+      color: $gray
+      +transition(all 0.25s)
+
+  +respond-to(tablet-lite)
+    a.top
+      display: none
+
+
+  +respond-to(tablet-landscape)
+    .wrapper
+      width: $max-width
+      margin: 3em auto
