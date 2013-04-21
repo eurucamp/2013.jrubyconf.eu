@@ -2,21 +2,24 @@ module SiteHelpers
 
   # Render section
   #
-  # Wraps content in <section/> tag and adds anchor to top.
+  # Wraps content in required tags and adds anchor link to #top.
   # Data is scoped to section.
   # Usage:
   #   = render_section :foo, :class => 'bar'
   #   = render_section :bat do |data|
   #     %h1= data.title
   def render_section(name, attrs = {}, &block)
+    section_data = data.send(name.to_sym)
+
     capture_haml do
       haml_tag :section, attrs.merge(:id => name) do
-        section_data = data.send(name.to_sym)
-        haml_tag :a, 'Back to top', { :class => 'top', :href => '#top' }
-        if block_given?
-          yield(section_data)
-        else
-          haml_concat partial("partials/#{name}", :locals => { :data => section_data })
+        haml_tag :div, :class => 'wrapper' do
+          haml_tag :a, 'Back to top', { :class => 'top', :href => '#top' }
+          if block_given?
+            haml_concat yield(section_data)
+          else
+            haml_concat partial("partials/#{name}", :locals => { :data => section_data })
+          end
         end
       end
     end
@@ -46,11 +49,4 @@ private
     attrs.merge(:class => classes)
   end
 
-  def tag_attributes(attrs={})
-    attrs.map {|k, v| "#{k}=\"#{v}\"" }.join(' ')
-  end
-
-  def tag(name, attrs=nil, open=false)
-    "<#{name}#{" #{tag_attributes(attrs)}" if attrs}#{open ? ">" : " />"}"
-  end
 end
