@@ -1,0 +1,111 @@
+#footer
+  background: $black url("/images/footer/logo_symbol.png") no-repeat right top
+  background-size: auto 100%
+  height: 200px
+  text-align: center
+  color: $white
+  +clearfix
+
+  +hidpi(1.5)
+    background-image: url("/images/footer/logo_symbol@2x.png")
+
+  .signature
+    margin: 1em 0
+    color: $extra-light-gray
+
+    img
+      vertical-align: middle
+      //margin: 0 30px
+      display: block
+      margin: 0.5em auto
+
+      &.jrubyconf-logo
+        width: 120px
+        //margin-left: -22px
+
+      &.jruby-logo
+        width: 67px
+
+  nav.social
+    ul
+      +unlisted
+
+      li
+        display: inline
+        margin: 0 5px
+
+      a
+        width: 40px
+        height: 40px
+        display: inline-block
+        text-indent: -999em
+        background: transparent url(/images/footer/social_sprite.png) no-repeat
+
+        +hidpi(1.5)
+          background-image: url(/images/footer/social_sprite@2x.png)
+          background-size: 160px 80px
+
+        $x: 0px
+        @each $item in twitter, facebook, google-plus, github
+          &.#{$item}
+            background-position: $x 0
+            $x: $x - 40px
+
+        &:hover
+          background-position-y: -40px
+
+  nav.secondary-navigation
+    display: block
+    margin: 1em 0
+
+    ul
+      +unlisted
+
+      li
+        display: inline
+        +custom-sans
+        font-size: 0.85em
+
+      a
+        color: $light-gray
+        padding: 0 10px
+        +transition(all 0.15s)
+
+        &:hover
+          color: $white
+          +transition(all 0.15s)
+
+
+  +respond-to(smartphone-landscape)
+    .signature
+      margin: 1.5em 0 1em
+      color: $extra-light-gray
+
+      &:after
+        content: "."
+        text-indent: -999em
+        display: block
+        margin: 1.5em auto
+        width: 100px
+        height: 1px
+        border-bottom: 1px solid $gray
+
+      img
+        margin: 0 30px
+        display: inline
+
+        &.jrubyconf-logo
+          margin-left: -22px
+
+        &.jruby-logo
+          width: 67px
+
+  +respond-to(tablet-lite)
+    height: 260px
+
+    .signature
+      margin: 2em 0 3em
+
+    nav.secondary-navigation
+      margin: 2em 0
+

@@ -38,10 +38,17 @@ button,
 
 section
   .wrapper
+    position: relative
     margin: 3em 20px
 
   a.top
     font-size: 0.75em
+    line-height: 1.75em
+    position: absolute
+    right: 0
+    top: 0
+    +custom-sans(regular)
+    text-transform: uppercase
     color: $light-gray
     +transition(all 0.15s)
 

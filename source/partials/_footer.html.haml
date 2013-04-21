@@ -1,3 +1,28 @@
 %footer#footer
 
   = partial "partials/navigation"
+
+  .wrapper
+    .signature
+      = image_tag "shared/logo@2x.png", :alt => "JRubyConf.eu logo", :class => "jrubyconf-logo"
+      in cooperation with
+      = image_tag "footer/jruby_logo@2x.png", :alt => "JRuby logo", :class => "jruby-logo"
+
+    %nav.social
+      %ul
+        %li
+          %a.twitter(href="") Twitter
+        %li
+          %a.facebook(href="") Facebook
+        %li
+          %a.google-plus(href="") Google +
+        %li
+          %a.github(href="") Github
+
+    %nav.secondary-navigation
+      %ul
+        -# Temp, not sure what's needed here yet
+        - %w(Policies Imprint Team).each do |item|
+          %li
+            %a(href="#" title="Jump to #{item}")
+              = item
