@@ -11,7 +11,7 @@ nav.navigation
 
     li
       display: block
-      +custom-sans(light)
+      +custom-sans
 
       &:last-child
         border: none
@@ -22,6 +22,7 @@ nav.navigation
 
     a
       color: $light-gray
+      text-transform: uppercase
       padding: 0.5em 20px 0.5em
       display: block
       +transition(all 0.15s)
@@ -40,6 +41,7 @@ nav.navigation
     text-align: center
     height: 70px
     line-height: 70px
+    border: none
 
     ul
       li

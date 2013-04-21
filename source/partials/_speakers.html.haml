@@ -1,1 +1,17 @@
-= data.title
+%h3= data.title
+%ul
+  - data.speakers.each do |speaker|
+    %li(id="#{speaker.twitter}")>
+      %a(href="##{speaker.twitter}" title="Learn more about '#{speaker.name}'")
+        = image_tag "speakers/#{speaker.twitter}@2x.jpg", :alt => "Image of #{speaker.name}"
+        %strong= speaker.name
+        = speaker.company
+
+%p.cfp-info
+  Got something to say our attendees simply must not miss?
+  %br
+  Our
+  %a(href="" title="Head over to the CFP")
+    call for papers
+  is open until May 5th.
+

@@ -20,13 +20,13 @@ button,
   height: 40px
   background: $lighter-red
   color: $white
-  font-size: 1.125em
-  text-transform: lowercase
-  font-variant: small-caps
-  letter-spacing: 0.08em
+  font-size: 0.825em
+  text-transform: uppercase
+  letter-spacing: 0.09em
   +custom-sans(bold)
   +transition(all 0.25s)
   border-radius: 3px
+  text-shadow: 0 -1px 0 transparentize($red, 0.5)
 
   &:hover
     background: $red
@@ -36,17 +36,22 @@ button,
   +respond-to(mid-range)
     width: 200px
 
+%row
+  background: $extra-light-gray
+  border-top: 1px solid $lighter-gray
+  border-bottom: 1px solid $lighter-gray
+
 section
   .wrapper
     position: relative
     margin: 3em 20px
 
   a.top
+    text-align: center
+    display: block
+    margin: -1em 0 -2em
     font-size: 0.75em
     line-height: 1.75em
-    position: absolute
-    right: 0
-    top: 0
     +custom-sans(regular)
     text-transform: uppercase
     color: $light-gray
@@ -55,6 +60,23 @@ section
     &:hover
       color: $gray
       +transition(all 0.25s)
+
+  h3
+    text-align: center
+    text-transform: uppercase
+    color: $dark-gray
+    +custom-sans(regular)
+    font-size: 1.5em
+    letter-spacing: 0.06em
+
+    &:after
+      content: "."
+      text-indent: -999em
+      display: block
+      margin: 1.5em auto
+      width: 100px
+      height: 1px
+      border-bottom: 1px solid $light-gray
 
   +respond-to(tablet-lite)
     a.top

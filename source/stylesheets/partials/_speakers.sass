@@ -1,0 +1,95 @@
+#speakers
+  @extend %row
+
+  ul
+    +unlisted
+    width: 100%
+    position: relative
+    text-align: center
+
+    li
+      display: block
+      text-transform: uppercase
+      font-size: 0.75em
+      margin: 2em 0
+      letter-spacing: 0.09em
+
+      a
+        color: $gray
+
+        &:hover
+          strong
+            color: $lighter-red
+            +transition(all 0.15s)
+
+      img
+        width: 100px
+        border-radius: 75px
+        margin: 0 0 1.5em 0
+
+      strong
+        display: block
+        color: $dark-gray
+        +custom-sans(bold)
+        +transition(all 0.15s)
+        text-transform: none
+        font-size: 1.25em
+
+  p.cfp-info
+    background: $white
+    border: 1px solid $lighter-gray
+    padding: 1em 20px
+    text-align: center
+    +custom-sans
+
+    a
+      text-transform: uppercase
+      letter-spacing: 0.09em
+      +custom-sans(bold)
+      color: $lighter-red
+      font-size: 0.825em
+      +transition(all 0.25s)
+
+      &:hover
+        color: $red
+        +transition(all 0.25s)
+
+
+  +respond-to(smartphone-portrait)
+    ul
+      li
+        width: percentage(1/2)
+        display: inline-block
+
+
+  +respond-to(smartphone-landscape)
+    ul
+      li
+        width: percentage(1/3)
+
+
+  +respond-to(tablet-portrait)
+    ul
+      li
+        width: percentage(1/4)
+
+        img
+          width: 125px
+
+
+  +respond-to(tablet-landscape)
+    ul
+      li
+        width: percentage(1/5)
+
+        img
+          width: 125px
+
+
+  +respond-to(desktop)
+    ul
+      li
+
+        img
+          width: 150px
+
