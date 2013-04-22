@@ -1,0 +1,91 @@
+#venue
+  margin: 0 auto
+  +clearfix
+
+  .column
+    height: 200px
+    overflow: hidden
+    position: relative
+
+    &:first-child
+      display: none
+
+    &:after
+      content: "."
+      text-indent: -999em
+      width: 100%
+      height: 100%
+      border-top: 1px solid $white
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 9999
+
+    img
+      width: 100%
+
+    &.description
+      height: auto
+      font-size: 0.9em
+      margin: 2em 0
+
+      &:after
+        content: none
+
+      p
+        margin: 0 20px 0 0
+        line-height: 1.6em
+
+        &.more
+          text-align: center
+          margin: 0
+
+          &:before
+            content: "."
+            text-indent: -999em
+            display: block
+            margin: 1em auto
+            width: 100px
+            height: 1px
+            border-bottom: 1px solid $extra-light-gray
+
+          a
+            +custom-sans(bold)
+            +transition(all 0.15s)
+
+            &:hover
+              color: $red
+              +transition(all 0.15s)
+
+
+  +respond-to(tablet-lite)
+    .column
+      width: percentage(1/2)
+      height: 280px
+      float: right
+
+      &:after
+        border-left: 1px solid $white
+
+      &.description
+        margin: 0
+        height: 280px
+
+
+  +respond-to(tablet-portrait)
+    .column
+      width: percentage(1/5)
+      margin-top: 1em
+
+      img
+        height: 100%
+        width: auto
+
+      &.description
+        float: left
+        margin-top: 1em
+        width: percentage(2/5)
+
+  +respond-to(tablet-landscape)
+    .column, .column.description
+      width: percentage(1/4)
