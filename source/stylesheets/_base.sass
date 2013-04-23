@@ -41,7 +41,7 @@ button,
   border-top: 1px solid $lighter-gray
   border-bottom: 1px solid $lighter-gray
 
-section
+section, article
   .wrapper
     position: relative
     margin: 3em 20px
@@ -82,8 +82,43 @@ section
     a.top
       display: none
 
-
   +respond-to(tablet-landscape)
     .wrapper
       width: $max-width
       margin: 3em auto
+
+
+article
+  &.text-only
+    padding-bottom: 2em
+
+    address
+      background: $extra-light-gray
+      padding: 1em 20px
+      +custom-sans(regular)
+      font-style: normal
+
+      strong
+        +custom-sans(bold)
+
+    h4, h5
+      margin: 4em 0 1.5em
+      font-size: 0.9em
+      +custom-sans(bold)
+      text-transform: uppercase
+
+
+    +respond-to(smartphone-landscape)
+      .wrapper
+        width: 440px
+        margin: 3em auto
+
+        h4, h5
+          text-align: center
+
+        p
+          text-align: justify
+
+    +respond-to(tablet-landscape)
+      .wrapper
+        width: 440px
