@@ -25,8 +25,12 @@
 
     %nav.secondary-navigation
       %ul
-        -# Temp, not sure what's needed here yet
-        - %w(Policies Imprint Team).each do |item|
-          %li
-            %a(href="#" title="Jump to #{item}")
-              = item
+        %li
+          %a(href="/imprint" title="View the imprint")
+            Imprint
+        %li
+          %a(href="http://2013.eurucamp.org/codeofconduct.html" title="Jump to eurucamp.org for our policies")
+            Policies
+        %li
+          %a(href="http://2013.eurucamp.org/team.html" title="Jump to eurucamp.org for our team")
+            Team
