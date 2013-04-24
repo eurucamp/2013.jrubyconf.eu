@@ -1,53 +1,6 @@
-- content_for :title do
-  %title
-    JRubyConf EU
+---
+title: JRubyConf 2013
+---
 
-.small-13.large-4.columns
-  %h1
-    dates
-  %i.foundicon-calendar
-  %h2 14 - 15 August 2013
-  %p
-    After a first successful European excursion in 2012, JRubyConf is back,
-    bigger and better – this year as a two-day, single track conference.
-  %p
-    JRubyConf will take place on
-    <strong>Wednesday 14 and Thursday 15 August</strong> and form part of the
-    = link_to 'eurucamp week', 'http://2013.eurucamp.org'
-    of Ruby events.
-
-  %h1
-    venue
-  %i.foundicon-location
-  %h2 Back to Berlin
-  %p
-    JRubyConf returns to Germany’s vibrant capital, Berlin. Our striking
-    downtown location will be announced shortly.
-
-.logo.small-13.large-4.columns.hide-for-small
-  %img{:src=>'/images/jrubyconf_logo_alone.png'}
-
-.small-13.large-4.columns
-  %h1
-    tickets
-  %i.foundicon-cart
-  %p
-    Early-bird tickets for JRubyConf EU and eurucamp are now available from
-    = succeed '.' do
-      = link_to 'tickets.jrubyconf.eu', 'http://tickets.jrubyconf.eu/'
-
-  %h1
-    speakers
-  %i.foundicon-mic
-  %h2 Be part of it
-  %p
-    Our Call For Proposals (CFP) opens later this week (week beginning 8 April).
-    Get your thinking caps on!
-  %p
-    &nbsp;
-  -#%p
-    Our Call For Proposals (CFP) is now open at
-    = succeed '.' do
-      = link_to 'cfp.eurucamp.org', 'http://cfp.eurucamp.org/'
-  %p
-    &nbsp;
+- data.sections.each do |section|
+  = render_section section

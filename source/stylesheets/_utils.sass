@@ -1,0 +1,64 @@
+=respond-to($media)
+  @if $media == low-end
+    @media screen and (min-width: 160px)
+      @content
+  @else if $media == mid-range
+    @media screen and (min-width: 240px)
+      @content
+  @else if $media == smartphone-portrait
+    @media screen and (min-width: 320px)
+      @content
+  @else if $media == smartphone-landscape
+    @media screen and (min-width: 480px)
+      @content
+  @else if $media == tablet-lite
+    @media screen and (min-width: 640px)
+      @content
+  @else if $media == tablet-portrait
+    @media screen and (min-width: 768px)
+      @content
+  @else if $media == tablet-landscape
+    @media screen and (min-width: 1024px)
+      @content
+  @else if $media == tablet-oversize
+    @media screen and (min-width: 1100px)
+      @content
+  @else if $media == desktop
+    @media screen and (min-width: 1280px)
+      @content
+  @else if $media == large-screen
+    @media screen and (min-width: 1400px)
+      @content
+
+=greyscale
+  +prefixer(filter, grayscale(100%))
+
+=no-greyscale
+  +prefixer(filter, grayscale(0%))
+
+=unlisted
+  list-style: none
+  margin: 0
+  padding: 0
+
+=background-size-cover($image)
+  background: url($image) no-repeat center center
+  background-size: cover
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$image}', sizingMethod='scale')
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$image}', sizingMethod='scale')
+
+=animate($type, $duration: 1s, $delay: 0)
+  +animated
+  +prefixer(animation-duration, $duration, webkit moz ms o spec)
+  +prefixer(animation-delay, $delay, webkit moz ms o spec)
+  // can't seem to call dynamic mixin names
+  @if $type == fade-in
+    +fade-in
+  @else if $type == fade-in-right
+    +fade-in-right
+  @else if $type == fade-in-left
+    +fade-in-left
+  @else if $type == flip-in-y
+    +flip-in-y
+  @else if $type == flip-in-x
+    +flip-in-x

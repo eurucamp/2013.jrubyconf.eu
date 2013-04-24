@@ -1,0 +1,13 @@
+nav_title: Speakers
+title: Meet our speakers
+speakers:
+  - twitter: headius
+    name: Charles Nutter
+    company: Redhat Inc.
+  - twitter: tom_enebo
+    name: Tom Enebo
+    company: Redhat Inc.
+cfp_info: |
+  Got something to say our attendees simply must not miss?<br />
+  Our <a href="http://cfp.eurucamp.org" title="Head over to the CFP">call for papers</a>
+  is open until May 15th.

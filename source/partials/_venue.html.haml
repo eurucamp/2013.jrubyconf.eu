@@ -1,0 +1,15 @@
+%h3= data.title
+
+.column
+  = image_tag "venue/impression_1.jpg", :alt => "An impression from the venue"
+
+.column.description
+  %p= data.description
+  %p.more
+    %a(href="#{data.link}" title="#{data.link_title}")
+      = data.link_title
+
+.column
+  = image_tag "venue/impression_2.jpg", :alt => "An impression from the venue"
+.column
+  = image_tag "venue/impression_3.jpg", :alt => "An impression from the venue"

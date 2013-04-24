@@ -1,0 +1,87 @@
+#header
+  +clearfix
+
+  .wrapper
+    height: 40px
+    padding: 0 20px
+    overflow: hidden
+    background: $black url(/images/header/logo_symbol.png) no-repeat center right
+
+    +hidpi(1.5)
+      background-image: url(/images/header/logo_symbol@2x.png)
+      background-size: 78px 40px
+
+  h1
+    margin: 0
+    float: left
+    font-size: 1em
+    margin: 12px 0
+
+    img
+      width: 120px
+
+  // this toggle will show and hide the navigation on small sizes
+  // and jump to the navigation in the footer if no JS available
+  a.navigation-toggle
+    background: transparent url(/images/header/navigation_toggle.png) no-repeat center center
+    text-indent: -999em
+    float: right
+    width: 20px
+    height: 15px
+    margin: 12px 0
+
+    +hidpi(1.5)
+      background-image: url(/images/header/navigation_toggle@2x.png)
+      background-size: 20px 15px
+
+  // the big red lift underneath the navigation,
+  // only visible on bigger screens
+  .lift
+    display: none
+
+  +respond-to(tablet-lite)
+    .wrapper,
+    h1,
+    a.navigation-toggle
+      display: none
+
+    $lift_bg_image: '/images/header/lift_bg.jpg'
+
+    .lift
+      display: block
+      text-align: center
+      color: $white
+      padding: 2.5em 0
+      +background-size-cover('/images/header/lift_bg.jpg')
+
+      img
+        width: 220px
+        +animate(flip-in-y, 2s, 1s)
+
+      h2
+        font-size: 3.5em
+        line-height: 0.85em
+        text-transform: lowercase
+        font-variant: small-caps
+        +custom-serif(regular)
+        letter-spacing: 0.05em
+        margin: -35px 0 0.25em
+
+        span
+          +animated
+          display: block
+          +animate(fade-in-left, 1s, 1s)
+
+        strong
+          display: block
+          font-size: 1.0125em
+          text-shadow: 0 0 2em $darker-red
+          font-family: Sonar
+          letter-spacing: -0.025em
+          +animate(fade-in-right, 1s, 1s)
+
+      p
+        +custom-sans(light)
+        margin: 2em 0 0em
+        letter-spacing: 0.06em
+        +animate(fade-in, 3s)

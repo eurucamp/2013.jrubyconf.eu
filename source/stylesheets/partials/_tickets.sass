@@ -1,0 +1,56 @@
+#tickets
+  +background-size-cover('/images/header/lift_bg.jpg')
+  text-align: center
+  +clearfix
+  +custom-sans(regular)
+
+  .wrapper
+    margin-top: 1.5em
+    margin-bottom: 1.5em
+
+  a.top
+    display: none
+
+  p
+    color: $white
+    font-size: 1.25em
+
+    span
+      display: block
+
+      &.extension
+        display: none
+
+  a.button
+    background: $white
+    color: $lighter-red
+
+    &:hover
+      background: transparentize($white, 0.25)
+
+
+  +respond-to(tablet-lite)
+    background: none
+    +custom-sans(regular)
+    margin-bottom: 1em
+
+    .wrapper
+      margin-top: 3em
+      margin-bottom: 3em
+
+    p
+      color: $dark-gray
+      font-size: 1.125em
+
+      span
+        &.extension
+          display: block
+
+    a.button
+      margin: 1em 0 0
+      background: $lighter-red
+      color: $white
+      text-shadow: 0 -1px 0 transparentize($red, 0.5)
+
+      &:hover
+        background: $red

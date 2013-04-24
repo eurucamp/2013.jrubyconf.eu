@@ -1,0 +1,69 @@
+nav.navigation
+  clear: both
+  +clearfix
+  background: $black
+  border-top: 1px solid $dark-gray
+  display: none
+  font-size: 0.85em
+
+  ul
+    +unlisted
+
+    li
+      display: block
+      +custom-sans
+
+      &:last-child
+        border: none
+        margin: 0
+
+        a
+          border: none
+
+    a
+      color: $light-gray
+      text-transform: uppercase
+      padding: 0.5em 20px 0.5em
+      display: block
+      +transition(all 0.15s)
+      border-bottom: 1px dotted $dark-gray
+
+      &:hover
+        +transition(all 0.15s)
+        border-bottom-style: solid
+        border-bottom-color: $lighter-red
+        background: $lighter-red
+        color: $white
+
+
+  +respond-to(tablet-lite)
+    display: block
+    text-align: center
+    height: 70px
+    line-height: 70px
+    border: none
+
+    ul
+      li
+        display: inline-block
+
+      a
+        display: inline
+        border: none
+
+        &:hover
+          background: none
+          border: none
+          color: $lighter-red
+
+
+// navigation in footer, only used on small sizes and
+// if JS is not available
+#footer .navigation
+  display: none
+
+  html.no-js &
+    display: block
+
+    +respond-to(tablet-lite)
+      display: none

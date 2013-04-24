@@ -1,0 +1,11 @@
+%h3= data.title
+%ul
+  - data.speakers.each do |speaker|
+    %li(id="#{speaker.twitter}")>
+      %a(href="##{speaker.twitter}" title="Learn more about '#{speaker.name}'")
+        = image_tag "speakers/#{speaker.twitter}@2x.jpg", :alt => "Image of #{speaker.name}"
+        %strong= speaker.name
+        = speaker.company
+
+- if data.cfp_info
+  %p.cfp-info= data.cfp_info
