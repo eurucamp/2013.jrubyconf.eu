@@ -6,6 +6,11 @@
         = image_tag "speakers/#{speaker.twitter}@2x.jpg", :alt => "Image of #{speaker.name}"
         %strong= speaker.name
         = speaker.company
+  %li.cfp
+    %a(href="http://cfp.eurucamp.org" title="Head over to the CFP")
+      %span
+      %strong You?
+      &nbsp;
 
 - if data.cfp_info
   %p.cfp-info= data.cfp_info
