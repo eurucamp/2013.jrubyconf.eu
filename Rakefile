@@ -27,7 +27,6 @@ load 'heroku_san/tasks.rb'
 require 'nokogiri'
 require 'open-uri'
 require 'yaml'
-require 'sitemap_generator'
 
 namespace :utils do
 
@@ -35,22 +34,6 @@ namespace :utils do
   task :update_attendees do
     data = lanyrd_attendees.to_yaml
     File.open('data/attendees.yml', 'w') {|f| f.write(data) }
-  end
-
-  desc "Update sitemap"
-  task :update_sitemap do
-    SitemapGenerator::Sitemap.default_host = 'http://2013.jrubyconf.eu'
-    SitemapGenerator::Sitemap.public_path = "source"
-    SitemapGenerator::Sitemap.create do
-      add '/',           :changefreq => 'hourly'
-      add '/policies',   :changefreq => 'weekly'
-      add '/imprint',    :changefreq => 'weekly'
-      #add '/schedule',   :changefreq => 'daily', :priority => 0.8
-      #add '/venue',      :changefreq => 'daily'
-      #add '/sponsors',   :changefreq => 'daily'
-
-    end
-    SitemapGenerator::Sitemap.ping_search_engines
   end
 
   # scrapes eurucamp page on lanyrd.com and returns

@@ -1,3 +1,5 @@
+require 'extensions/sitemap'
+
 # Markdown engine
 set :markdown_engine, :redcarpet
 
@@ -8,6 +10,7 @@ set :images_dir,      'images'
 
 # Livereload
 activate :livereload
+activate :sitemap_generator
 
 # Build-specific configuration
 configure :build do
