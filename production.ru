@@ -4,8 +4,13 @@
 require 'bundler'
 Bundler.setup :production
 
+require 'rack/rewrite'
 require 'rack/contrib/try_static'
 
+use Rack::Rewrite do
+  r301 %r{/blog/?(.*)}, 'http://blog.eurucamp.org/$1'
+  r301 '/feed.xml',     'http://blog.eurucamp.org/feed.xml'
+end
 use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
 
 # Run your own Rack app here or use this one to serve 404 messages:
