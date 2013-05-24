@@ -1,0 +1,102 @@
+#sponsors
+  .wrapper
+    margin: 1em 20px 0
+
+  h3
+    +custom-sans(bold)
+    font-size: 0.9em
+    margin: 2em 0 4em 0
+
+    &:after
+      width: 30px
+
+  ul
+    +unlisted
+    @extend %clearfix
+    text-align: center
+    font-size: 0px
+    line-height: 0
+
+    li
+      display: inline-block
+
+      a
+        display: block
+
+      img
+        width: 100%
+        display: block
+
+  p.sponsor-info
+    border-top: 1px solid $lighter-gray
+    padding: 1em 20px
+    margin: 2em 0 0 0
+    text-align: center
+    +custom-sans
+
+    a
+      text-transform: uppercase
+      letter-spacing: 0.09em
+      +custom-sans(bold)
+      color: $lighter-red
+      font-size: 0.825em
+      vertical-align: baseline
+      +transition(all 0.25s)
+
+      &:hover
+        color: $red
+        +transition(all 0.25s)
+
+  +respond-to(smartphone-portrait)
+    padding: 1em 0 0 0
+
+    ul
+      &.primary
+        margin: 0 0 1em 0
+
+        li
+          width: percentage(1/2)
+
+      &.secondary
+        li
+          width: percentage(1/3)
+
+
+  +respond-to(smartphone-landscape)
+    padding: 2em 0 0 0
+
+    ul
+      &.primary
+        li
+          width: percentage(1/3)
+
+      &.secondary
+        li
+          width: percentage(1/4)
+
+
+  +respond-to(tablet-portrait)
+    padding: 3em 0 0 0
+
+    ul
+      &.primary
+        li
+          width: percentage(1/4)
+
+      &.secondary
+        li
+          width: percentage(1/5)
+
+  +respond-to(tablet-landscape)
+    .wrapper
+      margin: 3em auto
+
+    ul
+      &.primary
+        li
+          width: percentage(1/5)
+
+      &.secondary
+        li
+          width: percentage(1/6)
+

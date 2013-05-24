@@ -1,0 +1,18 @@
+%h3= data.title
+
+- if (primary = data.companies.select{|c| c[:primary] }).any?
+  %ul.primary
+    - primary.each do |company|
+      %li>
+        %a(href="#{company.url}" title="Visit the sponsor's web pages")
+          = image_tag "sponsors/#{company.name.underscore}.png", :alt => "Logo for #{company.name}"
+
+- if (secondary = data.companies.reject{|c| c[:primary] }).any?
+  %ul.secondary
+    - secondary.each do |company|
+      %li>
+        %a(href="#{company.url}" title="Visit the sponsor's web pages")
+          = image_tag "sponsors/#{company.name.underscore}.png", :alt => "Logo for #{company.name}"
+
+- if data.sponsor_info
+  %p.sponsor-info= data.sponsor_info
