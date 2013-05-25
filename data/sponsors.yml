@@ -1,33 +1,9 @@
 title: Sponsored by
 nav_title: Sponsors
-companies:
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: true
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: true
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: true
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: true
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: false
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: false
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: false
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: false
-  - name: Dummy
-    url: http://www.foobar.com
-    primary: false
+companies: []
+#  - name: Dummy
+#    url: http://www.foobar.com
+#    primary: true
 
 sponsor_info: |
   Does your company use JRuby? You should consider sponsoring the only JRuby Conference in 2013!
