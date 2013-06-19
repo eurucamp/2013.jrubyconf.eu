@@ -1,7 +1,7 @@
 %h3= data.title
 
 .column
-  = image_tag "venue/impression_1.jpg", :alt => "An impression from the venue"
+  = image_tag data.images.first.path, :alt => data.images.first.alt
 
 .column.description
   %p= data.description
@@ -10,6 +10,9 @@
       = data.link_title
 
 .column
-  = image_tag "venue/impression_2.jpg", :alt => "An impression from the venue"
-.column
-  = image_tag "venue/impression_3.jpg", :alt => "An impression from the venue"
+  = image_tag data.images.last.path, :alt => data.images.last.alt
+
+.column.map
+  %iframe(frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="#{data.gmaps.url}")
+  %a(href="#{data.gmaps.link.url}" title="#{data.gmaps.link.title}")
+    = data.gmaps.link.label

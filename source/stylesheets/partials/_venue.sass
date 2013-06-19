@@ -7,6 +7,29 @@
     overflow: hidden
     position: relative
 
+    &.map
+      overflow: visible
+
+      iframe
+        width: 100%
+        height: 100%
+
+      a
+        display: block
+        text-indent: -999em
+        z-index: 999
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: transparent
+        +transition(background 0.5s)
+
+        &:hover
+          background: transparentize($red, 0.5)
+
+
     &:first-child
       display: none
 
@@ -19,7 +42,7 @@
       position: absolute
       top: 0.4px
       left: 0.4px
-      z-index: 9998
+      z-index: 997
 
     img
       width: 100%
@@ -38,7 +61,6 @@
 
         &.more
           text-align: center
-          margin: 0
 
           &:before
             content: "."

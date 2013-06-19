@@ -5,9 +5,23 @@ description: |
   Germany’s capital is slowly turning into
   Europe’s creative hub and provides the perfect
   setting for JRubyConf.eu.
-  Our downtown venue will allow easy access to
-  Berlins top locations before and after the conference.
   <br />
-  Stay tuned for the details.
-link: '#'
-link_title: More info coming soon
+  The conference will be held at the beautiful
+  <em>Heimatafen Neukölln</em> (Karl-Marx-Straße 141,
+  12043 Berlin).
+
+images:
+  - path: "venue/impression_1.jpg"
+    alt: "Berlin impression"
+  - path: "venue/impression_2.jpg"
+    alt: "Heimathafen Neukölln, Stage"
+
+gmaps:
+  url: "https://maps.google.com/maps?q=Karl-Marx-Stra%C3%9Fe+141,+12043,+Berlin,+Germany&output=embed&z=13&iwloc=near"
+  link:
+    url: "https://maps.google.com/maps?q=Karl-Marx-Stra%C3%9Fe+141,+12043,+Berlin,+Germany&z=13"
+    title: Head over to Google Maps
+    label: View bigger map
+
+link: 'http://www.heimathafen-neukoelln.de/'
+link_title: More about the venue
