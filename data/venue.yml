@@ -2,8 +2,7 @@ title: The Venue
 nav_title: Venue
 description: |
   <strong>Berlin, Berlin!</strong>
-  Germany’s capital is slowly turning into
-  Europe’s creative hub and provides the perfect
+  Europe’s creative hub provides the perfect
   setting for JRubyConf.eu.
   <br />
   The conference will be held at the beautiful
@@ -25,3 +24,7 @@ gmaps:
 
 link: 'http://www.heimathafen-neukoelln.de/'
 link_title: More about the venue
+
+logo:
+  path: "venue/logo.png"
+  alt: Heimathafen Neukölln, Logo

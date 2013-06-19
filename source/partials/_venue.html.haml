@@ -7,7 +7,8 @@
   %p= data.description
   %p.more
     %a(href="#{data.link}" title="#{data.link_title}")
-      = data.link_title
+      = image_tag data.logo.path, :alt => data.logo.alt
+      -#= data.link_title
 
 .column
   = image_tag data.images.last.path, :alt => data.images.last.alt

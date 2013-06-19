@@ -61,23 +61,27 @@
 
         &.more
           text-align: center
+          margin: 0
+
+          img
+            margin: 0 auto
 
           &:before
             content: "."
             text-indent: -999em
             display: block
-            margin: 1em auto
+            margin: 1em auto 0.5em
             width: 100px
             height: 1px
             border-bottom: 1px solid $extra-light-gray
 
-          a
-            +custom-sans(bold)
-            +transition(all 0.15s)
 
-            &:hover
-              color: $red
-              +transition(all 0.15s)
+  +respond-to(low-end)
+    .column
+      &.description
+        p.more
+          img
+            width: 160px
 
 
   +respond-to(tablet-lite)
@@ -92,6 +96,9 @@
       &.description
         margin: 0
         height: 280px
+
+        p.more
+          margin: 0 20px 0 0
 
 
   +respond-to(tablet-portrait)
