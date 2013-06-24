@@ -7,12 +7,25 @@ speakers:
   - twitter: tom_enebo
     name: Tom Enebo
     company: Redhat Inc.
+
   - twitter: iconara
     name: Theo Hultberg
     company: Burt
+  - twitter: eregontp
+    name: Benoit Daloze
+    company: "&nbsp;"
+  - twitter: supercoco9
+    name: Javier Ramirez
+    company: Teowaki
+  - twitter: aivlis_s
+    name: Silvia Schreier
+    company: InnoQ
+  - twitter: tlossen
+    name: Tim Lossen
+    company: Wooga
+  - twitter: PragTob
+    name: Tobias Pfeiffer
+    company: "&nbsp;"
 
-cfp_info: |
-  Our <a href="http://cfp.eurucamp.org" title="Head over to the CFP">call for papers</a>
-  is now closed.
-  <br />
-  We’ll announce the selected speakers shortly.
+
+cfp_info:
