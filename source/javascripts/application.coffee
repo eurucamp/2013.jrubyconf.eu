@@ -1,9 +1,19 @@
+jumpTo = window.location.hash.replace('#', '')
+window.location.hash = ''
+
 $ ->
 
   $header           = $('#header')
   $body             = $('body')
-  $ewb              = $('#eurucamp-week-bar')
-  eurucampBarHeight = if $ewb.length then $ewb.height() - 5 else 0 # 5px for the foot
+  eurucampBarHeight = 40
+
+  scrollToID = (id) ->
+    targetOffset = $("##{id}").offset().top
+    offset       = targetOffset - eurucampBarHeight
+    $body.animate scrollTop: offset, 700
+
+  # scroll to anchor if given when page loaded
+  setTimeout(scrollToID, 1500, jumpTo) if $("##{jumpTo}").length
 
   $header
     # main navigation toggle
@@ -14,6 +24,5 @@ $ ->
     # scroll to, animated
     .on 'click', '.navigation a', (e) ->
       e.preventDefault()
-      targetOffset = $('#' + @href.split('#')[1]).offset().top
-      $body.animate
-        scrollTop: targetOffset - eurucampBarHeight, 700
+      scrollToID(@href.split('#')[1])
+
