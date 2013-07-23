@@ -1,0 +1,22 @@
+!!! 5
+- ie_html :lang => "en", :class => "no-js" do
+  %head
+    = partial "partials/layout_head"
+
+  %body#top
+    %iframe#eurucamp-week-bar(src="//eurucamp-week-bar.herokuapp.com?group=jruby_conf" scrolling="no")
+
+    #container
+      %header#header
+        .wrapper
+          %h1
+            = image_tag "shared/logo@2x.png", :alt => "JRubyConf.eu"
+
+          %a.navigation-toggle(href="#footer" title="Jump to the navigation")
+            Jump to navigation
+
+        = partial "partials/navigation"
+      #main(role="main")
+        = yield
+      = partial "partials/footer"
+      = partial "partials/scripts"
