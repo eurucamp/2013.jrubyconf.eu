@@ -1,5 +1,9 @@
 %nav.navigation
   %ul
+    - if current_page.url != "/"
+      %li
+        %a(href="/" title="Back to main page")
+          %strong Home
     - data.sections.each do |section|
       %li
         - title = data.to_h[section][:nav_title] || data.to_h[section][:title]
