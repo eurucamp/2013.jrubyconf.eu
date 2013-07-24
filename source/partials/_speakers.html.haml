@@ -1,11 +1,37 @@
 %h3= data.title
-%ul
+%ul.speakers
   - data.speakers.each do |speaker|
     %li(id="#{speaker.twitter}")>
-      %a(href="##{speaker.twitter}" title="Learn more about '#{speaker.name}'")
+      %a(href="speakers/#{speaker.twitter}.html" data-details="#{speaker.twitter}" title="Learn more about '#{speaker.name}'")
         = image_tag "speakers/#{speaker.twitter}@2x.jpg", :alt => "Image of #{speaker.name}"
         %strong= speaker.name
-        = speaker.company
+        %span= speaker.company
+
+%ul.details
+  - data.speakers.each do |speaker|
+    %li(id="#{speaker.twitter}")
+      %a.close(href="#" title="Return to regular view") ×
+      .header.wrapper
+        %figure
+          = image_tag "speakers/#{speaker.twitter}@2x.jpg", :alt => "Image of #{speaker.name}"
+        %h3
+          = speaker.name
+        %p.meta
+          = speaker.company
+      .bio
+        .column
+          %h4
+            Biography
+          %p
+            = lorem.paragraphs 3
+      .talk
+        .column
+          %h4
+            = surround '“', '”' do
+              = lorem.words(rand(4) + 3)
+          %p
+            = lorem.paragraphs 4
+
 
 - if data.cfp_info
   %p.cfp-info= data.cfp_info

@@ -97,7 +97,7 @@ section, article
       width: $max-width
       margin: 3em auto
 
-
+// TODO extract and move into sub-page namespace
 article
   &.text-only
 
@@ -126,8 +126,44 @@ article
           text-align: center
 
         p
+          color: $dark-gray
           text-align: justify
+          font-size: 1.1em
+          line-height: 1.4em
 
     +respond-to(tablet-landscape)
       .wrapper
         width: 440px
+
+  &.speaker
+    header
+      padding: 3em 0 0 0
+      text-align: center
+
+      h3
+        margin-bottom: 0
+
+        &:after
+          margin-bottom: 0.5em
+
+      p.meta
+        margin: 0
+        text-align: center
+        color: $gray
+        font-size: 0.75em
+        text-transform: uppercase
+
+    img
+      width: 100px
+      border-radius: 75px
+      margin: 0 auto
+
+    section.talk
+      &:before
+        content: "."
+        text-indent: -999em
+        display: block
+        margin: 0.5em auto 1.5em
+        width: 100px
+        height: 1px
+        border-bottom: 1px solid $light-gray

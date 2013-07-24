@@ -33,3 +33,7 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+data.speakers.speakers.each do |speaker|
+  proxy "/speakers/#{speaker.twitter}.html", "/speaker.html", :locals => { :speaker => speaker }
+end
