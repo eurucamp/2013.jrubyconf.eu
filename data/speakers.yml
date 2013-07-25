@@ -4,49 +4,314 @@ speakers:
   - twitter: headius
     name: Charles Nutter
     company: Red hat Inc.
+    bio: Coming soon
+    paper: Coming soon
   - twitter: tom_enebo
     name: Tom Enebo
     company: Red hat Inc.
-
+    bio: |-
+      Tom is the co-lead of the JRuby project and an employee of Red Hat. He has
+      been a practitioner of Java since the heady days of the HotJava browser,
+      and he has been happily using Ruby since 2001. Thomas has spoken at
+      numerous Java and Ruby conferences, co-authored "Using JRuby", and was
+      awarded the "Rock Star" award at JavaOne. When Thomas is not working he
+      enjoys biking, anime, and drinking a decent IPA.
+    paper: Coming soon
   - twitter: iconara
     name: Theo Hultberg
     company: Burt
+    title: The tip of the iceberg / Don't worry about scaling Rails
+    paper: |-
+      You've probably heard people say that Rails can't scale. Perhaps you've
+      even reached that conclusion yourself. It may or may not be true, but
+      it's besides the point. Scaling Rails is not the issue, scaling your
+      application is.
+
+
+      This talk is not about Rails. It’s about building scalable applications
+      using Ruby, how to look beyond Rails and into the realm of distributed
+      systems. Over the last few years I’ve built a real time ad analytics
+      platform that processes billions of messages per day -- it started as a
+      Rails application and ended up somewhere completely different. Let me
+      show you the good, and the bad, choices I made, and what I learned along
+      the way.
+    bio: |-
+      Theo is Chief Architect at Burt, a Göteborg based big data startup that
+      wants to revolutionize the advertising industry by showing that there's
+      more to ad analytics than clicks. He learned to build distributed systems
+      the hard way by building a real time analytics platform that now handles
+      billions of requests per day.
+
+      He is a frequent speaker at developer conferences around Europe, where he
+      favors topics such as JRuby, big data and distributed systems. In his
+      hometown of Göteborg he co-organizes the Ruby, Scala, JavaScript and
+      distributed systems user groups.
+
+      But his only real claim to fame is that he has more reputation on Stack
+      Overflow than both Jeff and Joel.
   - twitter: eregontp
     name: Benoit Daloze
     company: "&nbsp;"
+    title: "Performance in JRuby: How fares the JVM in day-to-day tasks?"
+    paper: |-
+      About everyone has heard JRuby is fast, but *how* fast is that?
+
+      This talk is about giving you a concrete idea of it, with realistic
+      use-cases of popular libraries, efficient programming contests solutions
+      and day-to-day tasks from reading a file to analyzing a web app. There
+      will be a comparison with other Ruby implementations as well as with
+      various languages and VMs, highlighting pros and cons of the JVM.
+    bio: |-
+      Benoit is an open-source evangelist and a benchmark freak.
+      He is now an MRI committer and enjoys contributing to many projects
+      including JRuby, Rubinius and Homebrew.
+      He has been working last summer with the Google Summer of Code program
+      and had the chance to have @enebo as a mentor.
+
+      He started talks about benchmarking at the Belgian Ruby User Group a
+      couple years ago and gave a [talk](http://2012.jrubyconf.eu/speakers) at
+      JRubyConfEU/eurucamp last summer.
+      Between these, he gave various talks about Ruby and Git at my university
+      ACM Student Chapter.
+      attended a bunch of conferences including RubyConf, EuRuKo, ArrrrCamp
+      and of course eurucamp.
   - twitter: janogonzalez
     name: "Jano González"
     company: "&nbsp;"
+    title: How Ruby Programmed Me
+    paper: |-
+      It's a known fact that language models the way we think but, how do
+      programming languages do that with the programmer?
+
+      There are two forces fighting each other inside a programmer: The hacker
+      who wants to do things fast with a "ship it" attitude but at the risk of
+      creating shitty code and the perfectionist who looks for the most elegant
+      solution, but at the risk of suffering "analysis paralysis". How Ruby allow
+      us to achieve balance between both approaches?
+
+      This talk is not about how I program in Ruby, is about how Ruby "programmed me"
+      influencing my way of thinking about problems and my approach to problem
+      solving.
+    bio: |-
+      Jano is a developer, amateur musician and addicted to conferences. He has
+      created from small webapps to complex enterprisey architectures and has
+      spoken in plenty of latin american conferences, currently the CTO of
+      [HopIn](http://hop.in). During his free time he plays music and tries to
+      practice sports (without much success).
   - twitter: supercoco9
     name: Javier Ramirez
     company: Teowaki
+    title: Usable REST APIs
+    paper: |-
+      With the adoption of REST, the proliferation of smartphones and tablets,
+      and the second coming of JavaScript, exposing our applications as a
+      service is now more important than ever.
+
+      Rails or Sinatra make really easy to create a (kinda) RESTful API but, in
+      many occassions, these APIs are designed without really thinking on the
+      developers that will have to use them.
+
+      I want to talk about some of the points that can help making your API
+      more developer-friendly. Some of the areas I’ll cover will be
+      discoverability, authentication, headers, formats, parameters,
+      documentation and tools.
+
+      I will also provide a few tips about how to build your application first
+      as a service, then adding the web/mobile/presentation layer.
+    bio: |-
+      Javier is a web developer working mainly in Ruby on Rails projects since
+      2006 and one of the founders of teowaki, a web service designed to make
+      software development teams happier.
+
+      He is also the author of the book “Aptana RadRails: An IDE for Rails
+      Development” and an active member of the Ruby scene, being a founding
+      member of the Spanish Rails Conference, the Spanish Ruby Users Group
+      (SRUG), madrid-rb, the Ruby users group in Madrid, and the Spanish
+      Railscamp.
+
+      He is currently based in London —with regular trips to Madrid. In the
+      past he's worked in Zaragoza, Brescia, New York, Barcelona and Madrid.
   - twitter: aivlis_s
     name: Silvia Schreier
     company: InnoQ
+    title: RoR + DynamoDB = ?
+    paper: |-
+      We are currently developing a Ruby on Rails application with Amazon's
+      DynamoDB. Using a NoSQL cloud service and especially DynamoDB with its
+      particular restrictions entails a lot of challenges.
+
+      We will share our experiences using DynamoDB in general and in
+      combination with Ruby (and Rails) to help you to decide if you want to
+      use DynamoDB for your project (or not). We also provide a list of things
+      you should to keep in mind if you start using DynamoDB. These range from
+      managing your database, over mapping your model to the database, up to
+      testing. Furthermore, we present the design and technical details of our
+      persistence module.
+    bio: |-
+      Silvia is a consultant at innoQ with a strong scientific background in
+      developing RESTful applications. She has just started to explore the
+      world of Ruby (on Rails) and co-organized Rails Girls Rheinland.
+
+      She enjoys diving into new technologies with a focus on developing
+      RESTful applications, e.g., with NodeJs and Clojure, and using NoSQL
+      databases.
+
+      Up to now she gave talks on scientific conferences but now it is time to
+      solve real problems and share the experiences.
   - twitter: tlossen
     name: Tim Lossen
     company: Wooga
   - twitter: PragTob
     name: Tobias Pfeiffer
     company: "&nbsp;"
+    title: Shoes - The Ruby way to GUI applications
+    paper: |-
+      We build web applications and command line applications with Ruby - but
+      what about graphical desktop application? There used to be this [Shoes](http://www.shoesrb.com/)
+      thing, but isn't that _dead_?
+
+      No it's not! [Shoes4](https://github.com/shoes/shoes4) is being developed
+      right now by a dedicated team. Let me tell you all about it and introduce
+      you to this beautiful DSL I fell in love with.
+    bio: |-
+      Tobi is a clean coder, Rubyist, learner, teacher and agile craftsman by
+      passion. he organizes the [Ruby User Group Berlin](http://berlin.onruby.de/)
+      and am is contributor to [shoes](http://www.shoesrb.com/) and
+      [hacketyhack](http://www.hackety.com/). He have a special neck for
+      teaching, which is why he is a frequent coach at [Rails Girls Berlin](http://railsgirlsberlin.de/)
+      and also started teaching some longer courses recently.
+
+      To get an idea of what he's interested in and what he does you may check out his [blog](https://pragtob.wordpress.com/).
   - twitter: benlovell
     name: Ben Lovell
     company: Global Personals
+    title: Live long and prosper with Celluloid and JRuby
+    paper: |-
+      In this talk you'll learn about the Celluloid ecosystem. We'll take a glance at:
+
+      * Celluloid - the OOP & Actor model based concurrency framework
+
+      * Celluloid::IO - an evented I/O framework
+
+      * DCell - distributed Actors for Celluloid
+
+      * Reel - the Celluloid::IO powered web server
+
+      I'll cover the Actor model - Celluloid's inspiration for their approach
+      to concurrent objects. How we can best achieve concurrency without
+      mind-bending synchronisation, mutexes, deadlocks and all in idiomatic and
+      simple to grasp Ruby.
+
+      We'll finish up by briefly covering JRuby and why it's my preferred Ruby
+      VM for concurrency with Celluloid.
+    bio: |-
+      Ben is an engineer at Global Personals. A regular contributor to
+      open-source, agile proponent and harbours an almost unhealthy obsession
+      for all things concurrent and distributed. Ruby, Go and Scala are his
+      first loves. Beards a close second.
   - twitter: Martin Boßlet
     name: _emboss_
     company: "&nbsp;"
+    title: krypt & jruby - cryptography's new best friends?
+    paper: |-
+      As of JRuby 1.7.3, [krypt](https://github.com/krypt/krypt) is being
+      shipped with JRuby by default. Currently, krypt is being used to provide
+      missing functionality of the OpenSSL extension. Chances are you may be
+      using krypt today without even realizing it.
+
+      But krypt's goals go beyond just being a fill-in for OpenSSL - the
+      ultimate goal is to replace the OpenSSL extension entirely. See for
+      yourself how the Java parts of krypt enable us to run the exact same code
+      on all Rubies - no more second class citizens, no strings attached.
+      You're fed up with overcomplicated APIs for everyday things like securing
+      your passwords or encrypting your data? krypt provides cryptography for
+      actual human beings with simple and clear interfaces. There's a
+      dead-simple API if all you care about is security, but there's also full
+      control for the guys in the ivory towers.  Find out how to extend krypt's
+      functionality by integrating Java cryptography libraries.
+
+      Finally, be a witness of something that no other JRuby (or Java)
+      cryptography library can give you today: access to arbitrary C
+      crypography libraries without having to change your actual Ruby code.
+    bio: |-
+      Martin is a [freelancer](http://martinbosslet.de) by day, by night he is
+      also a member of ruby-core, one of the maintainers of the Ruby OpenSSL
+      extension and the author of [krypt](https://gihub.com/krypt/krypt).
+      Cryptography is his passion and he truly enjoys it, even if it means
+      being the nerd among nerds for the rest of his life. He's been helping
+      the European Commission to implement a digital signature platform over
+      the past years, and this was also the reason for krypt - so that he
+      could do it in a sane language for once. He recently discovered [blogging](http://martinbosslet.de/blog/archives/)
+      as a compensation for not haunting other people with lengthy emails
+      anymore.
   - twitter: Overbryd
     name: Lukas Rieder
     company: Wooga
+    title: Stateful Application Server
+    paper: |-
+      After more than one year of development, Wooga is heading for the global
+      launch of its game "Kingsbridge"!
+
+      This is the first game at Wooga with a backend written in JRuby!
+
+      The talk includes an introduction to the problems that were solved by
+      choosing a stateful applicaton server.
+
+      I will explain constraints, benefits and obvious differences to
+      traditional database backed application servers.
+
+      * Safely sharing state in a concurrent environment using JRuby
+
+      * Using Java concurrency utils in JRuby
+
+      * Sample problems solved, backed up with code
+
+      * Practical tips for capacity planning
+    bio: |-
+      Lukas evolved from a webdesign background to a backend developer. A
+      couple of years ago I was fiddling with HTML, CSS. Now I am building all
+      sorts of stuff that runs on servers. I have a great passion for
+      simplicity, empiricism and of course Ruby! I am currently working for
+      Wooga, a social games company in Berlin. But my biggest passion in life
+      is my family, a lovely wife and two daughters.
+
+      You can meet me occasionally at the Ruby User Group Berlin.
   - twitter: marek_jelen
     name: Marek Jelen
-    company: "&nbsp;"
+    company: Red Hat Inc.
+    title: JRuby on PaaS using Torquebox
+    paper: |-
+      Even though JRuby is not officially supported on OpenShift, it's very
+      simple to get it there working. In my talk I would like to talk about why
+      I think OpenShift is a great platform and JRuby on it makes sense.
+      However this would be too simple. In the second part we will get rid of
+      all the stacks and will deploy Thick (my hobby project - Netty based web
+      server) on OpenShift but straight on top of Red Hat Enterprise Linux.
+    bio: |-
+      JRuby enthusiast, Open-Source contributor, PaaS advocate, Red Hat employee
   - twitter: codefinger
     name: Joe Kutner
     company: "&nbsp;"
+    title: JRuby on PaaS using Torquebox
+    paper: |-
+      If the Java ecosystem is keeping you from deploying your Ruby
+      applications on the JVM, then wait no more. You can deploy your JRuby web
+      apps to the cloud using new products from Heroku, RedHat, EngineYard,
+      Google, Amazon, and others. You'll learn how one `git push` gives you
+      access to true multithreading, clustering, messaging, advanced garbage
+      collection, just-in-time compilation and much more. After this talk,
+      you'll be able to deploy TorqueBox, Trinidad, and Warbler to a variety of
+      cloud platforms.
+    bio: |-
+      Joe is a freelance Ruby developer in the United States. He's built Ruby
+      and JRuby applications for small startups, large enterprises, and every
+      size company in-between.  He's also authored two books from the Pragmatic Bookshelf:
+      "Deploying With JRuby" and "The Healthy Programmer." Joe contributes to a
+      number of open source projects including TorqueBox and Warbler.
   - twitter: j2h
     name: Josh Kalderimis
     company: Travis CI
-
+    bio: Coming soon
+    paper: Coming soon
 
 cfp_info: Further speakers to be announced shortly.

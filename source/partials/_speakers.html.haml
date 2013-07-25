@@ -23,15 +23,14 @@
           %h4
             Biography
           %p
-            = lorem.paragraphs 3
+            = speaker.bio
       .talk
         .column
           %h4
             = surround '“', '”' do
-              = lorem.words(rand(4) + 3)
+              = speaker.title
           %p
-            = lorem.paragraphs 4
-
+            = speaker.paper
 
 - if data.cfp_info
   %p.cfp-info= data.cfp_info
