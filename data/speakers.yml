@@ -209,8 +209,8 @@ speakers:
       open-source, agile proponent and harbours an almost unhealthy obsession
       for all things concurrent and distributed. Ruby, Go and Scala are his
       first loves. Beards a close second.
-  - twitter: Martin Boßlet
-    name: _emboss_
+  - twitter: _emboss_
+    name: Martin Boßlet
     company: "&nbsp;"
     title: krypt & jruby - cryptography's new best friends?
     paper: |-
