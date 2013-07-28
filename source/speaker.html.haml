@@ -2,8 +2,8 @@
 title: Speakers
 layout: sub_page
 ---
-%article.text-only.speaker
 
+%article.text-only.speaker
   %header.wrapper
     %figure
       = image_tag "speakers/#{speaker.twitter}@2x.jpg", :alt => "Image of #{speaker.name}"
@@ -14,13 +14,11 @@ layout: sub_page
 
   %section.bio
     .wrapper
-      %p
-        = lorem.paragraphs 3
+      = markdown(speaker.bio)
 
   %section.talk
     .wrapper
       %h4
-        = lorem.words(rand(4) + 3)
-      %p
-        = lorem.paragraphs 4
-
+        = surround '“', '”' do
+          = speaker.title
+      = markdown(speaker.paper)

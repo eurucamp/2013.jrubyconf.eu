@@ -38,6 +38,11 @@ module SiteHelpers
       block.call
     end
   end
+  
+  def markdown(content = '')
+    renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    renderer.render(content || '')
+  end
 
 private
 
