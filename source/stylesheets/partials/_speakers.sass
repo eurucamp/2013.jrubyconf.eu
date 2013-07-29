@@ -61,7 +61,7 @@
     border: 1px solid $lighter-gray
     padding: 1em 20px
 
-    li
+    & > li
       display: none
       position: relative
       opacity: 0
@@ -115,6 +115,11 @@
       font-size: 0.9em
       +custom-sans(bold)
       text-transform: uppercase
+
+    .column
+      li
+        font-size: 1.125em
+        line-height: 1.5em
 
   p.cfp-info
     background: $white
