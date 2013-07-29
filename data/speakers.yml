@@ -4,19 +4,32 @@ speakers:
   - twitter: headius
     name: Charles Nutter
     company: Red hat Inc.
-    bio: Coming soon
+    title: 
+    bio: |-
+      Charles works on JVM languages at Red Hat, focusing on Ruby but expanding
+      to other languages soon. He has worked on JRuby for the past eight years
+      and has been a JVM enthusiast since Java 1.0. Charles hopes to make JRuby
+      the best Ruby implementation for high performance, big data, and heavy
+      loads, and to use lessons learned from JRuby to help the JVM and other
+      languages that run on it meet their potential.
     paper: Coming soon
   - twitter: tom_enebo
     name: Tom Enebo
     company: Red hat Inc.
+    title: JRuby Pain Points
     bio: |-
-      Tom is the co-lead of the JRuby project and an employee of Red Hat. He has
-      been a practitioner of Java since the heady days of the HotJava browser,
-      and he has been happily using Ruby since 2001. Thomas has spoken at
-      numerous Java and Ruby conferences, co-authored "Using JRuby", and was
-      awarded the "Rock Star" award at JavaOne. When Thomas is not working he
-      enjoys biking, anime, and drinking a decent IPA.
-    paper: Coming soon
+      Thomas Enebo is the co-lead of the JRuby project and an employee of
+      Red Hat. He has been a practitioner of Java since the heady days of
+      the HotJava browser, and he has been happily using Ruby since 2001.
+      Thomas has spoken at numerous Java and Ruby conferences, co-authored
+      "Using JRuby", and was awarded the "Rock Star" award at JavaOne.  When
+      Thomas is not working he enjoys biking, anime, and drinking a decent
+      IPA.
+    paper: |-
+      All applications and libraries have their pain points. JRuby is no
+      exception. Thomas will examine JRuby's pain points and reflect on the
+      perception of pain.  He will finish by talking about some future plans to
+      address these pain points.
   - twitter: iconara
     name: Theo Hultberg
     company: Burt
@@ -313,5 +326,32 @@ speakers:
     company: Travis CI
     bio: Coming soon
     paper: Coming soon
+  - twitter:
+    name: Martin Mauch
+    company: "&nbsp;"
+    title: JRuby and Scala - not even a compiler can separate us!
+    paper: |-
+      Ruby and Scala are both beautiful languages that allow for functional,
+      object-oriented and meta-programming. Both have their uses and
+      strengths, so why not become a shape-shifter, a traveller between worlds?
+      Using simple meta-programming facilities one can join JRuby and Scala to
+      get the best out of both. We will take a simple RSpec'ed JRuby program
+      and port it to Scala along green tests.
 
+      You'll get an idea of the many similarities between Ruby and Scala,
+      where the two differ and what a compiler can do for you.
+
+      You will see how Scala can be taught to talk to dynamically typed
+      languages without the compiler breaking into tears and you will see how
+      JRuby can use Scala as a nitro-booster for performance-critical parts.
+    bio: |-
+      Martin is innovation manager at crealytics, a company dedicated to
+      shaking up the PPC advertising market with Profit-Driven Search Marketing
+      and their software camato.
+
+      Martin loves to connect and combine ideas and dream about the future of
+      software development.
+
+      Ruby, Scala and Bavarian are his favourite languages and he fluently
+      switches between the three.
 cfp_info: Further speakers to be announced shortly.
