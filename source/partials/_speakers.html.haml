@@ -22,14 +22,14 @@
         .column
           %h4
             Biography
-          = markdown(speaker.bio)
+          = markdown(speaker.bio, "TBA")
       .talk
         .column
           %h4
-            = surround '“', '”' do
+            = surround "“", "”" do
               = speaker.title
           %p
-            = markdown(speaker.paper)
+            = markdown(speaker.paper, "TBA")
 
 - if data.cfp_info
   %p.cfp-info= data.cfp_info

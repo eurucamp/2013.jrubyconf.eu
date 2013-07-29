@@ -39,9 +39,9 @@ module SiteHelpers
     end
   end
   
-  def markdown(content = '')
+  def markdown(content, fallback = '')
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-    renderer.render(content || '')
+    renderer.render(content || fallback)
   end
 
 private

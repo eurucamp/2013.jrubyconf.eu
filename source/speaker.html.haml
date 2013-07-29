@@ -14,11 +14,11 @@ layout: sub_page
 
   %section.bio
     .wrapper
-      = markdown(speaker.bio)
+      = markdown(speaker.paper, "TBA")
 
   %section.talk
     .wrapper
       %h4
-        = surround '“', '”' do
+        = surround "“", "”" do
           = speaker.title
-      = markdown(speaker.paper)
+      = markdown(speaker.paper, "TBA")
