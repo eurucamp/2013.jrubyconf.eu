@@ -37,3 +37,7 @@ end
 data.speakers.speakers.each do |speaker|
   proxy "/speakers/#{speaker.twitter}.html", "/speaker.html", :locals => { :speaker => speaker }
 end
+
+configure :build do
+  ignore 'speaker.html.haml'
+end
