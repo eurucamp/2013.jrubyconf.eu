@@ -313,13 +313,17 @@ speakers:
   - twitter: codefinger
     name: Joe Kutner
     company: "&nbsp;"
-    title: Deploying JRuby in the Cloud
+<<<<<<< HEAD
+    title: JRuby on PaaS using Torquebox
     bio: |-
       Joe is a freelance Ruby developer in the United States. He's built Ruby
       and JRuby applications for small startups, large enterprises, and every
       size company in-between.  He's also authored two books from the Pragmatic Bookshelf:
       "Deploying With JRuby" and "The Healthy Programmer." Joe contributes to a
       number of open source projects including TorqueBox and Warbler.
+=======
+    title: Deploying JRuby in the Cloud
+>>>>>>> change Joe K talk title
     paper: |-
       If the Java ecosystem is keeping you from deploying your Ruby
       applications on the JVM, then wait no more. You can deploy your JRuby web
