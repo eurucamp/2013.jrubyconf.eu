@@ -189,13 +189,14 @@ speakers:
     title: Shoes - The Ruby way to GUI applications
     bio: |-
       Tobi is a clean coder, Rubyist, learner, teacher and agile craftsman by
-      passion. he organizes the [Ruby User Group Berlin](http://berlin.onruby.de/)
-      and am is contributor to [shoes](http://www.shoesrb.com/) and
-      [hacketyhack](http://www.hackety.com/). He have a special neck for
+      passion. He organizes the [Ruby User Group Berlin](http://berlin.onruby.de/)
+      and contributes to [shoes](http://www.shoesrb.com/) and
+      [hacketyhack](http://www.hackety.com/). He has a special neck for
       teaching, which is why he is a frequent coach at [Rails Girls Berlin](http://railsgirlsberlin.de/)
-      and also started teaching some longer courses recently.
+      and also started to teach a course at a university recently. Right now he is
+      a happy Google Summer of Code student working on [shoes4](https://github.com/shoes/shoes4).
 
-      To get an idea of what he's interested in and what he does you may check out his [blog](https://pragtob.wordpress.com/).
+      To get an idea of what he is interested in and what he does you may check out his [blog](https://pragtob.wordpress.com/).
     paper: |-
       We build web applications and command line applications with Ruby - but
       what about graphical desktop application? There used to be this [Shoes](http://www.shoesrb.com/)
