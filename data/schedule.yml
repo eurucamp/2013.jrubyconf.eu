@@ -37,7 +37,7 @@ wednesday:
     type:     break
   -
     start:    13.45
-    title:    Performance in JRuby: How fares the JVM in day-to-day tasks?
+    title:    Performance in JRuby: How does the JVM fare in day-to-day tasks?
     type:     talk
     speaker:  Benoit Daloze
   -
