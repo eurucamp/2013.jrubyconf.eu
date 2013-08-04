@@ -33,7 +33,6 @@ $ ->
       # scroll to, animated
       .on 'click', '.navigation a', (e) ->
         e.preventDefault()
-        console.log($("##{@href.split('#')[1]}").length)
         $("##{@href.split('#')[1]}").scrollTo()
 
     $speakers
