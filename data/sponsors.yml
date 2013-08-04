@@ -2,8 +2,14 @@ title: Sponsored by
 nav_title: Sponsors
 companies:
   - name: Red Hat
-    url: https://www.redhat.com
+    url: https://www.redhat.com/
     primary: true
+  - name: Teowaki
+    url: http://teowaki.com/
+    primary: false
+  - name: Rebased
+    url: http://rebased.pl/
+    primary: false
 
 sponsor_info: |
   Does your company use JRuby? You should consider sponsoring the only JRuby Conference in 2013!
