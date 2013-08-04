@@ -11,7 +11,7 @@ $.fn.scrollTo = (duration = 700)->
   @each ->
     targetOffset = $(@).offset().top
     offset       = targetOffset - ECB_HEIGHT
-    $('body').animate scrollTop: offset, duration
+    $('body, html').animate scrollTop: offset, duration
 
 $ ->
 
@@ -33,6 +33,7 @@ $ ->
       # scroll to, animated
       .on 'click', '.navigation a', (e) ->
         e.preventDefault()
+        console.log($("##{@href.split('#')[1]}").length)
         $("##{@href.split('#')[1]}").scrollTo()
 
     $speakers
