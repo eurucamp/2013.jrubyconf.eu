@@ -1,1 +1,163 @@
-title: Schedule
+wednesday:
+  -
+    start:    8.45
+    title:    Coffee, Registration
+    type:     other
+  -
+    start:    9.30
+    title:    Introduction
+    type:     talk
+  -
+    start:    9.45
+    title:    "Keynote: JRuby Pain Points"
+    type:     talk
+    speaker:  Tom Enebo
+  -
+    start:    10.30
+    title:    Ruby for Java minds
+    type:     talk
+    speaker:  Jano González
+  -
+    start:    11.00
+    title:    Coffee Break
+    type:     break
+  -
+    start:    11.15
+    title:    Usable REST APIs
+    type:     talk
+    speaker:  Javier Ramírez
+  -
+    start:    11.45
+    title:    Shoes - The Ruby way to GUI applications
+    type:     talk
+    speaker:  Tobias Pfeiffer
+  -
+    start:    12.15
+    title:    Lunch
+    type:     break
+  -
+    start:    13.45
+    title:    Performance in JRuby: How fares the JVM in day-to-day tasks?
+    type:     talk
+    speaker:  Benoit Daloze
+  -
+    start:    14.15
+    title:    All Your Cores Are Belong To Us
+    type:     talk
+    speaker:  Tim Lossen
+  -
+    start:    14.30
+    title:    krypt & jruby - cryptography's new best friends?
+    type:     talk
+    speaker:  Martin Boßlet
+  -
+    start:    15.00
+    title:    Coffee Break
+    type:     break
+  -
+    start:    15.15
+    title:    JRuby on PaaS using TorqueBox
+    type:     talk
+    speaker:  Marek Jelen
+  -
+    start:    15.45
+    title:    TorqueBox: This Ain't Your Grandpa's Enterprise
+    type:     talk
+    speaker:  Joe Kutner
+  -
+    start:    16.15
+    title:    Break
+    type:     break
+  -
+    start:    16.30
+    title:    Lightning Talks
+    type:     talk
+  -
+    start:    17.00
+    title:    Goodbye
+    type:     other
+  -
+    start:    17.30
+    title:    Drinks, Dinner
+    type:     other
+  -
+    start:    20.30
+    end:      22.00
+    title:    Party
+    type:     other
+thursday:
+  -
+    start:    8.45
+    title:    Coffee
+    type:     other
+  -
+    start:    9.30
+    title:    Introduction
+    type:     talk
+  -
+    start:    9.45
+    title:    "Keynote"
+    type:     talk
+    speaker:  Charles Nutter
+  -
+    start:    10.30
+    title:    Live long and prosper with Celluloid and JRuby
+    type:     talk
+    speaker:  Ben Lovell
+  -
+    start:    11.00
+    title:    Coffee Break
+    type:     break
+  -
+    start:    11.15
+    title:    RoR + DynamoDB = ?
+    type:     talk
+    speaker:  Silvia Schreier
+  -
+    start:    11.45
+    title:    The tip of the iceberg / Don't worry about scaling Rails
+    type:     talk
+    speaker:  Theo Hultberg
+  -
+    start:    12.15
+    title:    Lunch
+    type:     break
+  -
+    start:    13.45
+    title:    The linguistic philosophy of Ludwig Wittgenstein
+    type:     talk
+    speaker:  Tom Stuart
+  -
+    start:    14.00
+    title:    TBA
+    type:     talk
+    speaker:  Josh Kalderimis
+  -
+    start:    14.30
+    title:    Coffee Break
+    type:     break
+  -
+    start:    14.45
+    title:    JRuby and Scala - not even compiler can separate us!
+    type:     talk
+    speaker:  Martin Mauch
+  -
+    start:    15.15
+    title:    Stateful Application Server
+    type:     talk
+    speaker:  Lukas Rieder
+
+    start:    15:45
+    title:    Goodbye
+    type:     other
+  -
+    start:    16:30
+    title:    Drinks, Dinner
+    type:     other
+  -
+    start:    19:30
+    end:      22.00
+    title:    Party
+    type:     other
+
+
