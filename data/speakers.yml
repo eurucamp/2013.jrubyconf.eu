@@ -4,7 +4,7 @@ speakers:
   - twitter: headius
     name: Charles Nutter
     company: Red hat Inc.
-    title: 
+    title: Optimizing Ruby
     bio: |-
       Charles works on JVM languages at Red Hat, focusing on Ruby but expanding
       to other languages soon. He has worked on JRuby for the past eight years
@@ -12,7 +12,21 @@ speakers:
       the best Ruby implementation for high performance, big data, and heavy
       loads, and to use lessons learned from JRuby to help the JVM and other
       languages that run on it meet their potential.
-    paper: 
+    paper: |-
+      Over the past 6 years, my focus on the JRuby project has usually been
+      performance. I've worked on JRuby's bytecode compiler, optimizations
+      to the runtime and core classes, improvements to memory use and
+      allocation rates, and the removal of concurrency bottlenecks. Over
+      that same time we've managed to increase JRuby's performance by orders
+      of magnitude, in some cases approaching the speed of compiled Java.
+
+      This talk will go over the major performance leaps we've had during
+      that time, starting with the disabling of ObjectSpace and proceeding
+      through recent enhancements like instance-variable packing and backref
+      framing. You will gain a better understanding of what makes Ruby fast
+      or slow, how you can write more efficient Ruby code, and what
+      implementations like JRuby are doing to make Ruby perform even better
+      in the future.
 
   - twitter: tom_enebo
     name: Tom Enebo
@@ -94,7 +108,7 @@ speakers:
   - twitter: janogonzalez
     name: "Jano González"
     company: "&nbsp;"
-    title: How Ruby Programmed Me
+    title: Ruby for Java minds
     bio: |-
       Jano is a developer, amateur musician and addicted to conferences. He has
       created from small webapps to complex enterprisey architectures and has
@@ -102,19 +116,12 @@ speakers:
       [HopIn](http://hop.in). During his free time he plays music and tries to
       practice sports (without much success).
     paper: |-
-      It's a known fact that language models the way we think but, how do
-      programming languages do that with the programmer?
-
-      There are two forces fighting each other inside a programmer: The hacker
-      who wants to do things fast with a "ship it" attitude but at the risk of
-      creating shitty code and the perfectionist who looks for the most elegant
-      solution, but at the risk of suffering "analysis paralysis". How Ruby allow
-      us to achieve balance between both approaches?
-
-      This talk is not about how I program in Ruby, is about how Ruby "programmed me"
-      influencing my way of thinking about problems and my approach to problem
-      solving.
-
+      Maybe after years of Java you have adopted an style that's not
+      immediately transferable to Ruby. In this talk you will know the
+      experience of someone who spent many years programming in Java before
+      falling in love with Ruby. We will explore how to stop worrying and
+      embrace dynamic typing, adopting a more declarative style of programming
+      and some of the nice things you can do now that you are using Ruby.
   - twitter: supercoco9
     name: Javier Ramirez
     company: Teowaki
@@ -180,8 +187,22 @@ speakers:
   - twitter: tlossen
     name: Tim Lossen
     company: Wooga
-    bio:
-    paper:
+    title: All Your Cores Are Belong To Us
+    bio: |-
+      "Amongst our weaponry are such diverse elements as: fear, surprise,
+      ruthless efficiency ..... and an almost fanatical devotion to the Pope."
+
+      Backend Engineer at Wooga.
+    paper: |-
+      It is 16:39 on a friday afternoon when your boss walks over.
+      "I urgently need an overview of the number of Archer Towers that players have built. Could you please generate a little histogram before you go home?"
+      You start to sweat. There are over a million player files on disk ...
+
+      Kernel threads -- or being able to utilize all cores from a single process
+      -- is a JRuby killer feature. In this talk, I will show how a fully
+      operational "Mini Hadoop" can be built in fifty lines of JRuby. I will
+      also demonstrate live on stage that it saves the day in the imaginary
+      scenario described above.
 
   - twitter: PragTob
     name: Tobias Pfeiffer
@@ -336,7 +357,6 @@ speakers:
     company: Travis CI
     bio: 
     paper:
-      
   - twitter: gimme_moe
     name: Martin Mauch
     company: "&nbsp;"
@@ -365,3 +385,17 @@ speakers:
       You will see how Scala can be taught to talk to dynamically typed
       languages without the compiler breaking into tears and you will see how
       JRuby can use Scala as a nitro-booster for performance-critical parts.
+
+  - twitter: mortice
+    name: Tom Stuart
+    company: SoundCloud
+    title: The linguistic philosophy of Ludwig Wittgenstein
+    bio: |-
+      Tom works in Berlin as a backend developer for Soundcloud and spends a
+      decent chunk of his spare time teaching beginners to program with Ruby.
+      He is a known curmudgeon and often wishes he were a philosophy teacher.
+    paper: |-
+      What is truth? What is the meaning of a word? Are these even good
+      questions? What does this have to do with programming? Learn, or possibly
+      not, the answers to some of these questions in an overview of the
+      philosophical work of Ludwig Wittgenstein.
