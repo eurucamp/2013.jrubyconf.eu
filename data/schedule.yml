@@ -69,21 +69,14 @@ wednesday:
     title:    Break
     type:     break
   -
-    start:    16.30
-    title:    Lightning Talks
-    type:     talk
-  -
-    start:    17.00
+    start:    16:30
+    end:      16:45
     title:    Goodbye
     type:     other
   -
-    start:    17.30
-    title:    Drinks, Dinner
-    type:     other
-  -
-    start:    20.30
+    start:    19.30
     end:      22.00
-    title:    Party
+    title:    Drink-up
     type:     other
 thursday:
   -
@@ -155,7 +148,7 @@ thursday:
     title:    Drinks, Dinner
     type:     other
   -
-    start:    19:30
+    start:    20:30
     end:      22.00
     title:    Party
     type:     other
