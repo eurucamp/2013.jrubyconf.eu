@@ -10,6 +10,9 @@ companies:
   - name: brands4friends
     url: http://www.brands4friends.de/
     primary: false
+  - name: nokia
+    url: http://www.nokia.com/
+    primary: false
 
 sponsor_info: |
   Does your company use JRuby? You should consider sponsoring the only JRuby Conference in 2013!
