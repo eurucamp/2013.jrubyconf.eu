@@ -16,6 +16,9 @@ companies:
   - name: InnoQ
     url: http://www.innoq.com/
     primary: false
+  - name: 10gen
+    url: http://www.10gen.com/
+    primary: false
 
 sponsor_info: |
   Does your company use JRuby? You should consider sponsoring the only JRuby Conference in 2013!
