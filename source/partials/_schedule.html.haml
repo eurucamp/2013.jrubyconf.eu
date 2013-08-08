@@ -1,0 +1,28 @@
+%h3= data.title
+
+.inner-wrapper
+  .content
+    - {:wednesday => "Wednesday", :thursday => "Thursday"}.each do |day, label|
+      .column(class=day)
+        %h4
+          = label
+        %ul
+          - data[day].each do |item|
+            %li(class="#{item.type}")
+              - if item.type == 'talk'
+                %a(href="speakers/#{item.speaker}.html" data-details="#{item.speaker}" title="View details")
+                  .time
+                    %span
+                      = item.start
+                  .title
+                    %strong
+                      = item.title
+                    %em
+                      = speaker_name(item.speaker)
+              - else
+                .time
+                  %span
+                    = item.start
+                .title
+                  %strong
+                    = item.title

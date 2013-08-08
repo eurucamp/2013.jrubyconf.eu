@@ -20,6 +20,7 @@ $ ->
     $header           = $('#header')
     $body             = $('body')
     $speakers         = $('#speakers')
+    $schedule         = $('#schedule')
 
     # scroll to anchor if given when page loaded
     setTimeout((->$("##{jumpTo}").scrollTo()), 1500) if $("##{jumpTo}").length
@@ -49,3 +50,9 @@ $ ->
       .on 'click', '.details a.close', (e)->
         e.preventDefault()
         $speakers.removeClass('show-details').scrollTo(500)
+
+    $schedule
+      .on 'click', 'a', (e)->
+        e.preventDefault()
+        speaker = $(@).data 'details'
+        $speakers.find("[data-details=#{speaker}]").trigger 'click'

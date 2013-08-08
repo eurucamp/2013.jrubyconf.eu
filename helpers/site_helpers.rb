@@ -38,10 +38,14 @@ module SiteHelpers
       block.call
     end
   end
-  
+
   def markdown(content, fallback = '')
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
     renderer.render(content || fallback)
+  end
+
+  def speaker_name(twitter)
+    data.speakers.speakers.find {|speaker| speaker.twitter == twitter }.name
   end
 
 private

@@ -1,0 +1,137 @@
+#schedule
+  .wrapper
+    width: 100%
+    margin: 5em 0 0 0
+
+  .inner-wrapper
+    background: $extra-light-gray
+    border-top: 1px solid $lighter-gray
+    border-bottom: 1px solid $lighter-gray
+
+  .content
+    position: relative
+    margin: 3em 20px
+    @extend %clearfix
+
+  h4
+    text-align: center
+    text-transform: uppercase
+    +custom-serif(bold)
+    letter-spacing: 0.15em
+    color: $gray
+    padding: 0 0 1em 0
+    margin: 0
+    border-bottom: 1px dotted $light-gray
+
+  .column
+    &.thursday
+      margin-top: 4em
+      border-top: 1px solid $light-gray
+
+      h4
+        margin-top: 2em
+
+  ul
+    +unlisted
+
+  li
+    clear: both
+    text-align: center
+
+    a
+      strong
+        +transition(all 0.15s ease-in-out)
+
+      &:hover
+        strong
+          color: $lighter-red
+
+    .time
+      +custom-sans(thin)
+      color: $gray
+
+    &.break,
+    &.lunch,
+    &.other
+      padding: 1em 0
+
+      strong,
+      .time
+        +custom-sans(light)
+        color: $gray
+
+    &.talk
+      padding: 0.75em 0
+
+      strong
+        +custom-sans(bold)
+        font-size: 1.1em
+        color: $black
+        line-height: 1.25em
+
+      em
+        display: block
+        color: $black
+        font-style: normal
+        text-transform: uppercase
+        font-size: 0.85em
+        margin: 0.25em 0 0 0
+
+      .time
+        font-size: 2.5em
+        line-height: 1
+        margin-bottom: 0.15em
+
+
+      .title
+        padding-top: 0.15em
+
+
+  +respond-to(smartphone-landscape)
+    li
+      text-align: left
+
+      &.break,
+      &.lunch,
+      &.other
+        padding: 1em 0 0 0
+
+      &.talk
+        padding: 1.5em 0 0.5em
+
+        strong
+          display: block
+          padding-right: percentage(1/6)
+
+    .time
+      width: percentage(1/4)
+      float: left
+      text-align: right
+
+      span
+        display: block
+        margin-right: 15px
+
+    .title
+      width: percentage(3/4)
+      float: right
+
+
+  +respond-to(tablet-portrait)
+    .column
+      width: percentage(1/2)
+      float: left
+
+      &.thursday
+        margin-top: 0
+        border-top: none
+
+        h4
+          margin-top: 0
+
+
+  +respond-to(tablet-landscape)
+    .content
+      width: $max-width
+      margin: 3em auto
+

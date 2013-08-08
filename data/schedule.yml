@@ -1,155 +1,156 @@
+title: Schedule
 wednesday:
   -
-    start:    8.45
+    start:    "8.45"
     title:    Coffee, Registration
     type:     other
   -
-    start:    9.30
+    start:    "9.30"
     title:    Introduction
-    type:     talk
+    type:     other
   -
-    start:    9.45
+    start:    "9.45"
     title:    "Keynote: JRuby Pain Points"
     type:     talk
-    speaker:  Tom Enebo
+    speaker:  tom_enebo
   -
-    start:    10.30
+    start:    "10.30"
     title:    Ruby for Java minds
     type:     talk
-    speaker:  Jano González
+    speaker:  janogonzalez
   -
-    start:    11.00
+    start:    "11.00"
     title:    Coffee Break
     type:     break
   -
-    start:    11.15
+    start:    "11.15"
     title:    Usable REST APIs
     type:     talk
-    speaker:  Javier Ramírez
+    speaker:  supercoco9
   -
-    start:    11.45
+    start:    "11.45"
     title:    Shoes - The Ruby way to GUI applications
     type:     talk
-    speaker:  Tobias Pfeiffer
+    speaker:  PragTob
   -
-    start:    12.15
+    start:    "12.15"
     title:    Lunch
     type:     break
   -
-    start:    13.45
-    title:    Performance in JRuby: How does the JVM fare in day-to-day tasks?
+    start:    "13.45"
+    title:    "Performance in JRuby: How does the JVM fare in day-to-day tasks?"
     type:     talk
-    speaker:  Benoit Daloze
+    speaker:  eregontp
   -
-    start:    14.15
+    start:    "14.15"
     title:    All Your Cores Are Belong To Us
     type:     talk
-    speaker:  Tim Lossen
+    speaker:  tlossen
   -
-    start:    14.30
+    start:    "14.30"
     title:    krypt & jruby - cryptography's new best friends?
     type:     talk
-    speaker:  Martin Boßlet
+    speaker:  _emboss_
   -
-    start:    15.00
+    start:    "15.00"
     title:    Coffee Break
     type:     break
   -
-    start:    15.15
+    start:    "15.15"
     title:    JRuby on PaaS using TorqueBox
     type:     talk
-    speaker:  Marek Jelen
+    speaker:  marek_jelen
   -
-    start:    15.45
-    title:    TorqueBox: This Ain't Your Grandpa's Enterprise
+    start:    "15.45"
+    title:    "TorqueBox: This Ain’t Your Grandpa’s Enterprise"
     type:     talk
-    speaker:  Joe Kutner
+    speaker:  codefinger
   -
-    start:    16.15
+    start:    "16.15"
     title:    Break
     type:     break
   -
-    start:    16:30
-    end:      16:45
+    start:    "16.30"
+    end:      "16.45"
     title:    Goodbye
     type:     other
   -
-    start:    19.30
-    end:      22.00
+    start:    "19.30"
+    end:      "22.00"
     title:    Drink-up
     type:     other
 thursday:
   -
-    start:    8.45
+    start:    "8.45"
     title:    Coffee
     type:     other
   -
-    start:    9.30
+    start:    "9.30"
     title:    Introduction
-    type:     talk
+    type:     other
   -
-    start:    9.45
+    start:    "9.45"
     title:    "Keynote"
     type:     talk
-    speaker:  Charles Nutter
+    speaker:  headius
   -
-    start:    10.30
+    start:    "10.30"
     title:    Live long and prosper with Celluloid and JRuby
     type:     talk
-    speaker:  Ben Lovell
+    speaker:  benlovell
   -
-    start:    11.00
+    start:    "11.00"
     title:    Coffee Break
     type:     break
   -
-    start:    11.15
+    start:    "11.15"
     title:    RoR + DynamoDB = ?
     type:     talk
-    speaker:  Silvia Schreier
+    speaker:  aivlis_s
   -
-    start:    11.45
+    start:    "11.45"
     title:    The tip of the iceberg / Don't worry about scaling Rails
     type:     talk
-    speaker:  Theo Hultberg
+    speaker:  iconara
   -
-    start:    12.15
+    start:    "12.15"
     title:    Lunch
     type:     break
   -
-    start:    13.45
+    start:    "13.45"
     title:    The linguistic philosophy of Ludwig Wittgenstein
     type:     talk
-    speaker:  Tom Stuart
+    speaker:  mortice
   -
-    start:    14.00
+    start:    "14.00"
     title:    TBA
     type:     talk
-    speaker:  Josh Kalderimis
+    speaker:  j2h
   -
-    start:    14.30
+    start:    "14.30"
     title:    Coffee Break
     type:     break
   -
-    start:    14.45
+    start:    "14.45"
     title:    JRuby and Scala - not even compiler can separate us!
     type:     talk
-    speaker:  Martin Mauch
+    speaker:  gimme_moe
   -
-    start:    15.15
+    start:    "15.15"
     title:    Stateful Application Server
     type:     talk
-    speaker:  Lukas Rieder
+    speaker:  Overbryd
 
-    start:    15:45
+    start:    "15.45"
     title:    Goodbye
     type:     other
   -
-    start:    16:30
+    start:    "16.30"
     title:    Drinks, Dinner
     type:     other
   -
-    start:    20:30
-    end:      22.00
+    start:    "20.30"
+    end:      "22.00"
     title:    Party
     type:     other
 
