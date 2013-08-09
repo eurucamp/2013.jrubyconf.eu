@@ -90,7 +90,7 @@ thursday:
     type:     other
   -
     start:    "9.45"
-    title:    "Keynote"
+    title:    "Keynote: Optimizing Ruby"
     type:     talk
     speaker:  headius
   -
