@@ -123,9 +123,9 @@ thursday:
     speaker:  mortice
   -
     start:    "14.00"
-    title:    TBA
+    title:    Stateful Application Server
     type:     talk
-    speaker:  j2h
+    speaker:  Overbryd
   -
     start:    "14.30"
     title:    Coffee Break
@@ -137,9 +137,9 @@ thursday:
     speaker:  gimme_moe
   -
     start:    "15.15"
-    title:    Stateful Application Server
+    title:    TBA
     type:     talk
-    speaker:  Overbryd
+    speaker:  j2h
   -
     start:    "15.45"
     title:    Goodbye
