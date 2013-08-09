@@ -145,10 +145,6 @@ thursday:
     title:    Goodbye
     type:     other
   -
-    start:    "16.30"
-    title:    Drinks, Dinner
-    type:     other
-  -
     start:    "20.30"
     end:      "22.00"
     title:    Party
