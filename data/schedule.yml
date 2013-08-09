@@ -71,7 +71,11 @@ wednesday:
     type:     break
   -
     start:    "16.30"
-    end:      "16.45"
+    title:    Lightening Talks
+    type:     other
+  -
+    start:    "17.00"
+    end:      "17.15"
     title:    Goodbye
     type:     other
   -
