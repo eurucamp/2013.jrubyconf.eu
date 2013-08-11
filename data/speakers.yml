@@ -49,7 +49,7 @@ speakers:
   - twitter: iconara
     name: Theo Hultberg
     company: Burt
-    title: The tip of the iceberg / Don't worry about scaling Rails
+    title: Chasing the Elephant
     bio: |-
       Theo is Chief Architect at Burt, a Göteborg based big data startup that
       wants to revolutionize the advertising industry by showing that there's
@@ -65,18 +65,8 @@ speakers:
       But his only real claim to fame is that he has more reputation on Stack
       Overflow than both Jeff and Joel.
     paper: |-
-      You've probably heard people say that Rails can't scale. Perhaps you've
-      even reached that conclusion yourself. It may or may not be true, but
-      it's besides the point. Scaling Rails is not the issue, scaling your
-      application is.
-
-      This talk is not about Rails. It’s about building scalable applications
-      using Ruby, how to look beyond Rails and into the realm of distributed
-      systems. Over the last few years I’ve built a real time ad analytics
-      platform that processes billions of messages per day -- it started as a
-      Rails application and ended up somewhere completely different. Let me
-      show you the good, and the bad, choices I made, and what I learned along
-      the way.
+      An account of my big data adventures with JRuby. War stories from battling
+      with storms, scaling mountains and speaking with oracles.
 
   - twitter: eregontp
     name: Benoit Daloze
