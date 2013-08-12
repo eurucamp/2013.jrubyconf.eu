@@ -345,8 +345,25 @@ speakers:
   - twitter: j2h
     name: Josh Kalderimis
     company: Travis CI
-    bio:
-    paper:
+    title: "JRuby Running All The Things"
+    bio: |
+      Josh is a lover of coffee, bacon, long walks on the beach, and continuous
+      integration. As a Travis CI founder he spends his day getting his hands
+      dirty with code, customer support, virtual machines, APIs, and devops.
+      And if you look closely enough you can find his mantra 'shipping technical debt daily'
+      tattooed on his body!
+    paper: |
+      JRuby has been at the heart of Travis CI for over two years now. Our SOA
+      based architecture has allowed us to use the best Ruby for the job, and
+      in most cases this has been JRuby. From our log processing, to our build
+      infrastructure, to our background jobs, JRuby is everywhere.
+
+      No matter what technology you use at the heart of your business you are
+      bound to have the 'HUZZAH' moments, and the 'WAT THE FUUU' moments, and
+      we have had our fair share of these.
+
+      This talk covers not only our code and what we did right and wrong, but
+      also a bit of the Ruby eco system, and how we can all improve it.
   - twitter: gimme_moe
     name: Martin Mauch
     company: "&nbsp;"
