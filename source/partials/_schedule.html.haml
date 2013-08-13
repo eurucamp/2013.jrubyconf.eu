@@ -19,6 +19,14 @@
                       = item.title
                     %em
                       = speaker_name(item.speaker)
+              - elsif item.url
+                %a(href="#{item.url}" title="View details")
+                  .time
+                    %span
+                      = item.start
+                  .title
+                    %strong
+                      = item.title
               - else
                 .time
                   %span

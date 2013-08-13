@@ -83,6 +83,7 @@ wednesday:
     end:      "22.00"
     title:    Drink-up
     type:     other
+    url:      "http://activities.eurucamp.org/activities/14"
 thursday:
   -
     start:    "8.45"
@@ -153,5 +154,6 @@ thursday:
     end:      "22.00"
     title:    Party
     type:     other
+    url:      "http://activities.eurucamp.org/activities/2"
 
 
