@@ -219,13 +219,15 @@ speakers:
 
   - twitter: benlovell
     name: Ben Lovell
-    company: "&nbsp;"
+    company: "1minus1"
     title: Live long and prosper with Celluloid and JRuby
     bio: |-
       Ben is a regular contributor to
       open-source, agile proponent and harbours an almost unhealthy obsession
       for all things concurrent and distributed. Ruby, Go and Scala are his
       first loves. Beards a close second.
+      
+      He currently works for digital agency [1minus1](http://1minus1.com).
     paper: |-
       In this talk you'll learn about the Celluloid ecosystem. We'll take a glance at:
 
