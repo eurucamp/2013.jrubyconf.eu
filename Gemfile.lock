@@ -21,7 +21,7 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
-    eventmachine (1.0.3)
+    eventmachine (1.2.3)
     excon (0.15.5)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -167,3 +167,9 @@ DEPENDENCIES
   rake (~> 10.0.3)
   redcarpet
   sitemap_generator
+
+RUBY VERSION
+   ruby 2.3.1p112
+
+BUNDLED WITH
+   1.14.6
